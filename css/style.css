@@ -30,23 +30,80 @@
   font-display: swap;
 }
 
-header {
-  font-family: "Helvetica Neue LT Std";
+/*$color3: ;
+$color4: ;
+$color5: ; */
+/*header {
+  font-family: $fontBase; 
 }
-
 header p:nth-child(1) {
-  font-weight: 300;
+  font-weight: 300;       normal
 }
-
 header p:nth-child(2) {
-  font-weight: normal;
+  font-weight: normal;     un poco mas bold
 }
-
 header p:nth-child(3) {
-  font-weight: 500;
+  font-weight: 500;         bold
+}
+header p:nth-child(4) {
+  font-weight: bold;        muy bold
+}
+*/
+header {
+  height: 86.89px;
+  background-color: #d4dace;
 }
 
-header p:nth-child(4) {
-  font-weight: bold;
+header nav {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 20px;
+}
+
+header nav img {
+  height: 40%;
+}
+
+header .btn-container {
+  display: none;
+}
+
+header .btn-container button {
+  background-color: #abb5a0;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  color: #ffffff;
+  border-radius: 7px;
+  padding: 5px 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header nav {
+    padding-left: 60px;
+  }
+  header nav img {
+    height: 30%;
+  }
+  header .btn-container {
+    display: block;
+    padding-right: 60px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

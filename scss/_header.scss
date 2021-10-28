@@ -1,15 +1,59 @@
-header {
-  font-family: $fontBase;
+/*header {
+  font-family: $fontBase; 
 }
 header p:nth-child(1) {
-  font-weight: 300;
+  font-weight: 300;       normal
 }
 header p:nth-child(2) {
-  font-weight: normal;
+  font-weight: normal;     un poco mas bold
 }
 header p:nth-child(3) {
-  font-weight: 500;
+  font-weight: 500;         bold
 }
 header p:nth-child(4) {
-  font-weight: bold;
+  font-weight: bold;        muy bold
+}
+*/
+header {
+  height: 86.89px;
+  background-color: $color1;
+  nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    img {
+      height: 40%;
+    }
+  }
+  .btn-container {
+    display: none;
+    button {
+      background-color: $color2;
+      border: 0;
+      outline: none;
+      cursor: pointer;
+      color: $white;
+      border-radius: 7px;
+      padding: 5px 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    nav {
+      padding-left: 60px;
+      img {
+        height: 30%;
+      }
+    }
+    .btn-container {
+      display: block;
+      padding-right: 60px;
+    }
+  }
 }
