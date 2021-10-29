@@ -1,0 +1,20 @@
+.about-container {
+  @include padding;
+  background: $color3;
+  color: $white;
+  p {
+    margin-bottom: 15px;
+    &:nth-child(1) {
+      font: $fontBold;
+    }
+    &:nth-child(2) {
+      font: $fontLight;
+    }
+    &:nth-child(3) {
+      font: $fontLight;
+    }
+    &:nth-child(4) {
+      font: $fontBold;
+    }
+  }
+}

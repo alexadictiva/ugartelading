@@ -1,29 +1,14 @@
-/*header {
-  font-family: $fontBase; 
-}
-header p:nth-child(1) {
-  font-weight: 300;       normal
-}
-header p:nth-child(2) {
-  font-weight: normal;     un poco mas bold
-}
-header p:nth-child(3) {
-  font-weight: 500;         bold
-}
-header p:nth-child(4) {
-  font-weight: bold;        muy bold
-}
-*/
 header {
-  height: 86.89px;
-  background-color: $color1;
+  height: 65px;
+  width: 100vw;
+  position: fixed;
   nav {
     height: 100%;
     display: flex;
     align-items: center;
     padding-left: 20px;
     img {
-      height: 40%;
+      height: 30%;
     }
   }
   .btn-container {
@@ -47,9 +32,6 @@ header {
     align-items: center;
     nav {
       padding-left: 60px;
-      img {
-        height: 30%;
-      }
     }
     .btn-container {
       display: block;

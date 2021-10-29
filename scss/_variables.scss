@@ -1,9 +1,30 @@
 $fontBase: "Helvetica Neue LT Std";
-$fontSize: 16px;
+
 $white: #ffffff;
+$overlay: #d4daceb9;
 $black: #000000;
 $color1: #d4dace;
 $color2: #abb5a0;
-/*$color3: ;
-$color4: ;
-$color5: ; */
+$color3: #384a51;
+$color4: #d9e0d4;
+/*$color5: ; */
+$fontLight: 300 16px/20px $fontBase;
+$fontNormal: normal 16px/20px $fontBase;
+$fontBold: 500 16px/20px $fontBase;
+$fontHard: bold 16px/20px $fontBase;
+
+.prueba {
+  font-family: "Helvetica Neue LT Std";
+}
+.prueba p:nth-child(1) {
+  font: $fontLight; /* normal */
+}
+.prueba p:nth-child(2) {
+  font: $fontNormal; /*  un poco mas bold */
+}
+.prueba p:nth-child(3) {
+  font: $fontBold; /* bold */
+}
+.prueba p:nth-child(4) {
+  font: $fontHard; /* muy bold */
+}
