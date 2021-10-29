@@ -8,8 +8,9 @@
 }
 
 body {
-  font: $fontBase;
+  font: $fontNormal;
   overflow-x: hidden;
+  letter-spacing: 1px;
 }
 
 img {

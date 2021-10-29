@@ -30,7 +30,6 @@
   font-display: swap;
 }
 
-/*$color5: ; */
 .prueba {
   font-family: "Helvetica Neue LT Std";
 }
@@ -67,8 +66,9 @@
 }
 
 body {
-  font: "Helvetica Neue LT Std";
+  font: normal 16px/20px "Helvetica Neue LT Std";
   overflow-x: hidden;
+  letter-spacing: 1px;
 }
 
 img {
@@ -84,6 +84,7 @@ header {
   height: 65px;
   width: 100vw;
   position: fixed;
+  background-color: #c7ccc0;
 }
 
 header nav {
@@ -141,7 +142,7 @@ header .btn-container button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 45vh;
+  height: 95vh;
 }
 
 .intro-container .overlay {
@@ -179,28 +180,44 @@ header .btn-container button {
   color: #ffffff;
 }
 
-.about-container p {
+@media (min-width: 1024px) {
+  .about-container {
+    padding: 60px 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.about-container div:nth-child(1) p {
   margin-bottom: 15px;
 }
 
-.about-container p:nth-child(1) {
+.about-container div:nth-child(1) p:nth-child(1) {
   font: 500 16px/20px "Helvetica Neue LT Std";
 }
 
-.about-container p:nth-child(2) {
+.about-container div:nth-child(1) p:nth-child(2) {
   font: 300 16px/20px "Helvetica Neue LT Std";
 }
 
-.about-container p:nth-child(3) {
+.about-container div:nth-child(1) p:nth-child(3) {
   font: 300 16px/20px "Helvetica Neue LT Std";
 }
 
-.about-container p:nth-child(4) {
+.about-container div:nth-child(1) p:nth-child(4) {
   font: 500 16px/20px "Helvetica Neue LT Std";
+}
+
+.about-container div:nth-child(1) div {
+  text-align: center;
 }
 
 .form-container {
   padding: 50px 20px;
+  max-width: 768px;
+  margin: auto;
 }
 
 .form-container p {
@@ -209,6 +226,25 @@ header .btn-container button {
   margin-bottom: 15px;
   text-align: center;
   font-size: 18px;
+}
+
+@media (min-width: 1024px) {
+  .form-container p {
+    text-align: left;
+  }
+}
+
+.form-container form {
+  text-align: right;
+}
+
+@media (min-width: 1024px) {
+  .form-container form div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 5px;
+  }
 }
 
 .form-container form input {
@@ -294,6 +330,7 @@ header .btn-container button {
   color: #ffffff;
   font-size: 17px;
   padding: 10px 0px;
-  width: 100%;
+  width: 25%;
+  border-radius: 9px;
 }
 /*# sourceMappingURL=style.css.map */
