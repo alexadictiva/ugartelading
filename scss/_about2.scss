@@ -3,25 +3,36 @@
   background-color: $color3;
   color: $white;
   .about-avilis-content {
-    max-width: 690px;
+    max-width: 650px;
     margin: auto;
 
-    h2 {
-      font-size: 2.1rem;
-      margin-bottom: 20px;
+    h3 {
+      font: $font1;
+      margin-bottom: 30px;
+      @include desktop {
+        font-size: 3rem;
+      }
     }
     p {
-      margin-bottom: 15px;
-      font: $fontLight;
+      margin-bottom: 30px;
+      font: $font4;
+      @include desktop {
+        font-size: 2.2rem;
+        line-height: 2.7rem;
+      }
       &:nth-child(4) {
-        font: $fontBold;
-        font-size: 1.6rem;
+        font-weight: bold;
+        @include desktop {
+          font: $font1;
+        }
+
+        max-width: 400px;
       }
     }
     .btn-container {
       text-align: center;
       .btn-contact {
-        margin-top: 20px;
+        margin-top: 30px;
         background-color: $color5;
         border: 0;
         outline: none;
@@ -30,6 +41,9 @@
         border-radius: 7px;
         padding: 10px 15px;
         font-size: 1.6rem;
+        @include desktop {
+          margin-top: 50px;
+        }
       }
     }
   }

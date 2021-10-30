@@ -1,6 +1,6 @@
-:root {
+/* :root {
   font-size: 62.5%;
-}
+} */
 $fontBase: "Helvetica Neue LT Std";
 
 $white: #ffffff;
@@ -11,23 +11,11 @@ $color2: #c7ccc0;
 $color3: #384a51;
 $color4: #d9e0d4;
 $color5: #abb5a0;
-$fontLight: 300 1.8rem/2.3rem $fontBase;
-$fontNormal: normal 1.8rem/2.3rem $fontBase;
-$fontBold: 500 1.8rem/2.2rem $fontBase;
-$fontHard: bold 1.8rem/2.1rem $fontBase;
 
-.prueba {
-  font-family: "Helvetica Neue LT Std";
-}
-.prueba p:nth-child(1) {
-  font: $fontLight; /* normal */
-}
-.prueba p:nth-child(2) {
-  font: $fontNormal; /*  un poco mas bold */
-}
-.prueba p:nth-child(3) {
-  font: $fontBold; /* bold */
-}
-.prueba p:nth-child(4) {
-  font: $fontHard; /* muy bold */
-}
+$fontBody: normal 1.6rem/2.2rem $fontBase;
+$fontBodyBold: bold 1.6rem/2.2rem $fontBase;
+$font1: 500 2rem/2.2rem $fontBase;
+$font2: normal 1.4rem/2.2rem $fontBase;
+$font3: 300 1.4rem/2.2rem $fontBase;
+$font4: 300 1.6rem/2rem $fontBase;
+$font5: normal 1.8rem/2rem $fontBase;

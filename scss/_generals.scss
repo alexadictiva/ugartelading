@@ -5,12 +5,13 @@
 }
 :root {
   scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 
 body {
-  font: $fontNormal;
+  font: $fontBody;
   overflow-x: hidden;
-  letter-spacing: 1px;
+  letter-spacing: 0.05rem;
 }
 
 img {
