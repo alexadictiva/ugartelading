@@ -6,7 +6,7 @@ var swiper = new Swiper(".mySwiper", {
 });
 // Google maps
 function initMap() {
-  const zoom = 16.8;
+  const zoom = 17;
 
   const src = "../assets/icons/marker.svg";
   const lat = "-34.55151658047298";

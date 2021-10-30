@@ -1,0 +1,36 @@
+.about-avilis-container {
+  @include padding;
+  background-color: $color3;
+  color: $white;
+  .about-avilis-content {
+    max-width: 690px;
+    margin: auto;
+
+    h2 {
+      font-size: 2.1rem;
+      margin-bottom: 20px;
+    }
+    p {
+      margin-bottom: 15px;
+      font: $fontLight;
+      &:nth-child(4) {
+        font: $fontBold;
+        font-size: 1.6rem;
+      }
+    }
+    .btn-container {
+      text-align: center;
+      .btn-contact {
+        margin-top: 20px;
+        background-color: $color5;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+        color: $white;
+        border-radius: 7px;
+        padding: 10px 15px;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
