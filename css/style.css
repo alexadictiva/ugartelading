@@ -30,27 +30,31 @@
   font-display: swap;
 }
 
+:root {
+  font-size: 62.5%;
+}
+
 .prueba {
   font-family: "Helvetica Neue LT Std";
 }
 
 .prueba p:nth-child(1) {
-  font: 300 16px/20px "Helvetica Neue LT Std";
+  font: 300 1.8rem/2.3rem "Helvetica Neue LT Std";
   /* normal */
 }
 
 .prueba p:nth-child(2) {
-  font: normal 16px/20px "Helvetica Neue LT Std";
+  font: normal 1.8rem/2.3rem "Helvetica Neue LT Std";
   /*  un poco mas bold */
 }
 
 .prueba p:nth-child(3) {
-  font: 500 16px/20px "Helvetica Neue LT Std";
+  font: 500 1.8rem/2.2rem "Helvetica Neue LT Std";
   /* bold */
 }
 
 .prueba p:nth-child(4) {
-  font: bold 16px/20px "Helvetica Neue LT Std";
+  font: bold 1.8rem/2.1rem "Helvetica Neue LT Std";
   /* muy bold */
 }
 
@@ -66,7 +70,7 @@
 }
 
 body {
-  font: normal 16px/20px "Helvetica Neue LT Std";
+  font: normal 1.8rem/2.3rem "Helvetica Neue LT Std";
   overflow-x: hidden;
   letter-spacing: 1px;
 }
@@ -80,10 +84,17 @@ a {
   text-decoration: none;
 }
 
+@media (min-width: 1024px) {
+  .enter-hidden {
+    display: none;
+  }
+}
+
 header {
   height: 65px;
   width: 100vw;
   position: fixed;
+  z-index: 10;
   background-color: #c7ccc0;
 }
 
@@ -186,32 +197,59 @@ header .btn-container button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
-.about-container div:nth-child(1) p {
-  margin-bottom: 15px;
+@media (min-width: 1024px) {
+  .about-container .about-description {
+    width: 50%;
+    padding: 0 50px 0 20px;
+  }
 }
 
-.about-container div:nth-child(1) p:nth-child(1) {
-  font: 500 16px/20px "Helvetica Neue LT Std";
+.about-container .about-description p {
+  margin-bottom: 20px;
 }
 
-.about-container div:nth-child(1) p:nth-child(2) {
-  font: 300 16px/20px "Helvetica Neue LT Std";
+.about-container .about-description p:nth-child(1) {
+  font: 500 1.8rem/2.2rem "Helvetica Neue LT Std";
+  font-size: 2.1rem;
+  line-height: 2.4rem;
 }
 
-.about-container div:nth-child(1) p:nth-child(3) {
-  font: 300 16px/20px "Helvetica Neue LT Std";
+@media (min-width: 1024px) {
+  .about-container .about-description p:nth-child(1) {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+  }
 }
 
-.about-container div:nth-child(1) p:nth-child(4) {
-  font: 500 16px/20px "Helvetica Neue LT Std";
+.about-container .about-description p:nth-child(2) {
+  font: 300 1.8rem/2.3rem "Helvetica Neue LT Std";
 }
 
-.about-container div:nth-child(1) div {
+.about-container .about-description div {
+  margin: 40px 0;
   text-align: center;
+}
+
+.about-container .about-image {
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .about-container .about-image {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-container .about-image img {
+    width: 80%;
+  }
 }
 
 .form-container {
@@ -221,11 +259,10 @@ header .btn-container button {
 }
 
 .form-container p {
-  font: bold 16px/20px "Helvetica Neue LT Std";
+  font: 500 1.8rem/2.2rem "Helvetica Neue LT Std";
   color: #384a51;
   margin-bottom: 15px;
   text-align: center;
-  font-size: 18px;
 }
 
 @media (min-width: 1024px) {
@@ -258,28 +295,28 @@ header .btn-container button {
 .form-container form input::-webkit-input-placeholder {
   color: #384a51;
   padding-left: 14px;
-  font: normal 16px/20px "Helvetica Neue LT Std";
+  font: normal 1.8rem/2.3rem "Helvetica Neue LT Std";
   font-size: 13.5px;
 }
 
 .form-container form input:-ms-input-placeholder {
   color: #384a51;
   padding-left: 14px;
-  font: normal 16px/20px "Helvetica Neue LT Std";
+  font: normal 1.8rem/2.3rem "Helvetica Neue LT Std";
   font-size: 13.5px;
 }
 
 .form-container form input::-ms-input-placeholder {
   color: #384a51;
   padding-left: 14px;
-  font: normal 16px/20px "Helvetica Neue LT Std";
+  font: normal 1.8rem/2.3rem "Helvetica Neue LT Std";
   font-size: 13.5px;
 }
 
 .form-container form input::placeholder {
   color: #384a51;
   padding-left: 14px;
-  font: normal 16px/20px "Helvetica Neue LT Std";
+  font: normal 1.8rem/2.3rem "Helvetica Neue LT Std";
   font-size: 13.5px;
 }
 
@@ -294,7 +331,7 @@ header .btn-container button {
   color: #384a51;
   padding-left: 15px;
   padding-top: 15px;
-  font: normal 16px/20px "Helvetica Neue LT Std";
+  font: normal 1.8rem/2.3rem "Helvetica Neue LT Std";
   font-size: 13.5px;
 }
 
@@ -302,7 +339,7 @@ header .btn-container button {
   color: #384a51;
   padding-left: 15px;
   padding-top: 15px;
-  font: normal 16px/20px "Helvetica Neue LT Std";
+  font: normal 1.8rem/2.3rem "Helvetica Neue LT Std";
   font-size: 13.5px;
 }
 
@@ -310,7 +347,7 @@ header .btn-container button {
   color: #384a51;
   padding-left: 15px;
   padding-top: 15px;
-  font: normal 16px/20px "Helvetica Neue LT Std";
+  font: normal 1.8rem/2.3rem "Helvetica Neue LT Std";
   font-size: 13.5px;
 }
 
@@ -318,7 +355,7 @@ header .btn-container button {
   color: #384a51;
   padding-left: 15px;
   padding-top: 15px;
-  font: normal 16px/20px "Helvetica Neue LT Std";
+  font: normal 1.8rem/2.3rem "Helvetica Neue LT Std";
   font-size: 13.5px;
 }
 
@@ -332,5 +369,238 @@ header .btn-container button {
   padding: 10px 0px;
   width: 25%;
   border-radius: 9px;
+}
+
+.benefit-container .benefit-content {
+  padding: 50px 20px;
+  background: #d9e0d4;
+  color: #384a51;
+}
+
+@media (min-width: 1024px) {
+  .benefit-container .benefit-content {
+    padding: 60px 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .benefit-container .benefit-content .description-ordered {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding-left: 65px;
+  }
+  .benefit-container .benefit-content .image-ordered {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .benefit-container .benefit-content .benefit-description {
+    width: 50%;
+    padding: 0 0 0 20px;
+  }
+}
+
+.benefit-container .benefit-content .benefit-description p {
+  margin-bottom: 20px;
+}
+
+.benefit-container .benefit-content .benefit-description p:nth-child(1) {
+  font: 500 1.8rem/2.2rem "Helvetica Neue LT Std";
+  font-size: 2.1rem;
+  line-height: 2.4rem;
+}
+
+@media (min-width: 1024px) {
+  .benefit-container .benefit-content .benefit-description p:nth-child(1) {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+  }
+}
+
+.benefit-container .benefit-content .benefit-description p:nth-child(2) {
+  font: 300 1.8rem/2.3rem "Helvetica Neue LT Std";
+}
+
+.benefit-container .benefit-content .benefit-description p:nth-child(3) {
+  font: 300 1.8rem/2.3rem "Helvetica Neue LT Std";
+}
+
+.benefit-container .benefit-content .benefit-description p:nth-child(4) {
+  font: 500 1.8rem/2.2rem "Helvetica Neue LT Std";
+}
+
+.benefit-container .benefit-content .benefit-description ul {
+  padding-left: 20px;
+  font: 300 1.8rem/2.3rem "Helvetica Neue LT Std";
+  line-height: 3rem;
+  padding-bottom: 40px;
+}
+
+.benefit-container .benefit-content .benefit-description div {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.benefit-container .benefit-content .benefit-image {
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .benefit-container .benefit-content .benefit-image {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .benefit-container .benefit-content .benefit-image img {
+    width: 80%;
+  }
+}
+
+/*slider*/
+.swiper {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+.swiper-pagination-bullet {
+  background-color: #384a51;
+}
+
+.move-container {
+  padding: 50px 20px;
+  background: #384a51;
+  color: #ffffff;
+}
+
+@media (min-width: 1024px) {
+  .move-container {
+    padding: 60px 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .move-container .move-description {
+    width: 50%;
+    padding: 0 50px 0 20px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+.move-container .move-description p {
+  margin-bottom: 40px;
+  font: 500 1.8rem/2.2rem "Helvetica Neue LT Std";
+  font-size: 2.1rem;
+  line-height: 2.4rem;
+}
+
+@media (min-width: 1024px) {
+  .move-container .move-description p {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+  }
+}
+
+.move-container .move-description div {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.move-container .move-image {
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .move-container .move-image {
+    width: 50%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .move-container .move-image img {
+    width: 80%;
+  }
+}
+
+#map {
+  width: 100%;
+  height: 80vh;
+  max-height: 600px;
+}
+
+.mmap {
+  position: relative;
+}
+
+.legend-container {
+  background-color: #384a51;
+  padding: 20px;
+}
+
+@media (min-width: 1024px) {
+  .legend-container {
+    width: 25%;
+    /*    position: absolute;
+    bottom: 0;
+    right: 0; */
+  }
+}
+
+.legend-container .legend-content {
+  background-color: #d9e0d4;
+  padding: 15px;
+}
+
+.legend-container .legend-content h2 {
+  color: #384a51;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+.legend-container .legend-content ul {
+  color: #384a51;
+  padding-left: 20px;
+  font: normal 1.8rem/2.3rem "Helvetica Neue LT Std";
+  font-size: 1.5rem;
+  line-height: 25px;
 }
 /*# sourceMappingURL=style.css.map */

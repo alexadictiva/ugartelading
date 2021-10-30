@@ -1,3 +1,6 @@
+:root {
+  font-size: 62.5%;
+}
 $fontBase: "Helvetica Neue LT Std";
 
 $white: #ffffff;
@@ -8,10 +11,10 @@ $color2: #c7ccc0;
 $color3: #384a51;
 $color4: #d9e0d4;
 $color5: #abb5a0;
-$fontLight: 300 16px/20px $fontBase;
-$fontNormal: normal 16px/20px $fontBase;
-$fontBold: 500 16px/20px $fontBase;
-$fontHard: bold 16px/20px $fontBase;
+$fontLight: 300 1.8rem/2.3rem $fontBase;
+$fontNormal: normal 1.8rem/2.3rem $fontBase;
+$fontBold: 500 1.8rem/2.2rem $fontBase;
+$fontHard: bold 1.8rem/2.1rem $fontBase;
 
 .prueba {
   font-family: "Helvetica Neue LT Std";

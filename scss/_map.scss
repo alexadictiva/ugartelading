@@ -1,0 +1,35 @@
+#map {
+  width: 100%;
+  height: 80vh;
+  max-height: 600px;
+}
+.mmap {
+  position: relative;
+}
+.legend-container {
+  background-color: $color3;
+  padding: 20px;
+  @include desktop {
+    width: 25%;
+    /*    position: absolute;
+    bottom: 0;
+    right: 0; */
+  }
+  .legend-content {
+    background-color: $color4;
+    padding: 15px;
+
+    h2 {
+      color: $color3;
+      margin-bottom: 10px;
+      font-size: 1.8rem;
+    }
+    ul {
+      color: $color3;
+      padding-left: 20px;
+      font: $fontNormal;
+      font-size: 1.5rem;
+      line-height: 25px;
+    }
+  }
+}

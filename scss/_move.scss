@@ -1,4 +1,4 @@
-.about-container {
+.move-container {
   @include padding;
   background: $color3;
   color: $white;
@@ -7,25 +7,22 @@
     display: flex;
     align-items: center;
   }
-  .about-description {
+  .move-description {
     @include desktop {
       width: 50%;
       padding: 0 50px 0 20px;
+      order: 2;
     }
 
     p {
-      margin-bottom: 20px;
-      &:nth-child(1) {
-        font: $fontBold;
-        font-size: 2.1rem;
-        line-height: 2.4rem;
-        @include desktop {
-          font-size: 2.4rem;
-          line-height: 2.8rem;
-        }
-      }
-      &:nth-child(2) {
-        font: $fontLight;
+      margin-bottom: 40px;
+
+      font: $fontBold;
+      font-size: 2.1rem;
+      line-height: 2.4rem;
+      @include desktop {
+        font-size: 2.4rem;
+        line-height: 2.8rem;
       }
     }
     div {
@@ -33,10 +30,11 @@
       text-align: center;
     }
   }
-  .about-image {
+  .move-image {
     text-align: center;
     @include desktop {
       width: 50%;
+      order: 1;
     }
     img {
       @include desktop {

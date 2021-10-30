@@ -4,11 +4,11 @@
   margin: auto;
 
   p {
-    font: $fontHard;
+    font: $fontBold;
     color: $color3;
     margin-bottom: 15px;
     text-align: center;
-    font-size: 18px;
+
     @include desktop {
       text-align: left;
     }

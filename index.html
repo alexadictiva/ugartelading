@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Garda</title>
   </head>
@@ -37,10 +41,12 @@
         </form>
       </section>
       <section class="about-container">
-        <div>
+        <div class="about-description">
           <p>
-            Viví en un edificio con personalidad propia. Funcional, de calidad,
-            adaptado a las necesidades de una vida en constante cambio.
+            Viví en un edificio con <br />
+            personalidad propia. <br />
+            Funcional, de calidad, adaptado a las necesidades de una vida en
+            constante cambio.
           </p>
           <p>
             GARDA UGARTE es lo que cada persona hace de todas las posibilidades
@@ -52,9 +58,302 @@
             <img src="./assets/icons/arrow-down.svg" alt="Arrow Down" />
           </div>
         </div>
-        <div></div>
+        <div class="about-image">
+          <picture>
+            <source
+              media="(max-width: 414px)"
+              srcset="./assets/images/mobile/aboutImage.jpg"
+            />
+            <source
+              media="(max-width: 900px)"
+              srcset="./assets/images/tablet/aboutImage.jpg"
+            />
+            <source
+              media="(min-width: 901px)"
+              srcset="./assets/images/desktop/aboutImage.jpg"
+            />
+
+            <img src="./assets/images/mobile/aboutImage.jpg" alt="A Building" />
+          </picture>
+        </div>
+      </section>
+      <section class="benefit-container">
+        <article class="benefit-content">
+          <div class="benefit-description">
+            <p>
+              Un proyecto completo por donde lo mires.
+              <br />
+              La vida que querés está <br class="enter-hidden" />
+              en GARDA UGARTE.
+            </p>
+            <p>
+              Departamentos amplios, equipados y con estilo. <br />
+              Unidades de 1 a 4 ambientes.<br />
+              Ubicación sin igual a 40 mts de Av. del Libertador.<br />
+              Los amenities que querés.<br />
+              La calidad que nos identifica.<br />
+            </p>
+
+            <div>
+              <img src="./assets/icons/arrow-down.svg" alt="Arrow Down" />
+            </div>
+          </div>
+          <div class="benefit-image">
+            <picture>
+              <source
+                media="(max-width: 414px)"
+                srcset="./assets/images/mobile/benefitImage.jpg"
+              />
+              <source
+                media="(max-width: 900px)"
+                srcset="./assets/images/tablet/benefitImage.jpg"
+              />
+              <source
+                media="(min-width: 901px)"
+                srcset="./assets/images/desktop/benefitImage.jpg"
+              />
+
+              <img
+                src="./assets/images/mobile/benefitImage.jpg"
+                alt="A Building"
+              />
+            </picture>
+          </div>
+        </article>
+        <article class="benefit-content">
+          <div class="benefit-description description-ordered">
+            <p>
+              Amenities para subir <br />
+              tu nivel de vida
+            </p>
+            <ul>
+              <li>SUM</li>
+              <li>GIMNASIO</li>
+              <li>COWORK</li>
+              <li>PISCINA CLIMATIZADA CON SOLARIUM</li>
+              <li>JARDÍN PARQUIZADO CON ÁREA DE JUEGOS</li>
+              <li>LAUNDRY</li>
+              <li>VIGILANCIA 24H</li>
+              <li>COCHERAS FIJAS</li>
+              <li>GUARDADO DE BICICLETAS</li>
+              <li>BAULERAS INDIVIDUALES</li>
+            </ul>
+          </div>
+          <div class="benefit-image image-ordered">
+            <div
+              class="
+                swiper
+                mySwiper
+                swiper-initialized swiper-horizontal swiper-pointer-events
+              "
+            >
+              <div
+                class="swiper-wrapper"
+                id="swiper-wrapper-a11fd4b9311c5bcf"
+                aria-live="polite"
+              >
+                <div
+                  class="swiper-slide swiper-slide-active"
+                  role="group"
+                  aria-label="1 / 4"
+                  style="width: 1317px"
+                >
+                  <picture>
+                    <source
+                      media="(max-width: 414px)"
+                      srcset="./assets/images/mobile/benefitSlider1.jpg"
+                    />
+                    <source
+                      media="(max-width: 900px)"
+                      srcset="./assets/images/tablet/benefitSlider1.jpg"
+                    />
+                    <source
+                      media="(min-width: 901px)"
+                      srcset="./assets/images/desktop/benefitSlider1.jpg"
+                    />
+
+                    <img
+                      src="./assets/images/mobile/benefitSlider1.jpg"
+                      alt="A Building"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="swiper-slide swiper-slide-next"
+                  role="group"
+                  aria-label="2 / 4"
+                  style="width: 1317px"
+                >
+                  <picture>
+                    <source
+                      media="(max-width: 414px)"
+                      srcset="./assets/images/mobile/benefitSlider2.jpg"
+                    />
+                    <source
+                      media="(max-width: 900px)"
+                      srcset="./assets/images/tablet/benefitSlider2.jpg"
+                    />
+                    <source
+                      media="(min-width: 901px)"
+                      srcset="./assets/images/desktop/benefitSlider2.jpg"
+                    />
+
+                    <img
+                      src="./assets/images/mobile/benefitSlider2.jpg"
+                      alt="A Building"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="swiper-slide"
+                  role="group"
+                  aria-label="3 / 4"
+                  style="width: 1317px"
+                >
+                  <picture>
+                    <source
+                      media="(max-width: 414px)"
+                      srcset="./assets/images/mobile/benefitSlider3.jpg"
+                    />
+                    <source
+                      media="(max-width: 900px)"
+                      srcset="./assets/images/tablet/benefitSlider3.jpg"
+                    />
+                    <source
+                      media="(min-width: 901px)"
+                      srcset="./assets/images/desktop/benefitSlider3.jpg"
+                    />
+
+                    <img
+                      src="./assets/images/mobile/benefitSlider3.jpg"
+                      alt="A Building"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="swiper-slide"
+                  role="group"
+                  aria-label="4 / 4"
+                  style="width: 1317px"
+                >
+                  <picture>
+                    <source
+                      media="(max-width: 414px)"
+                      srcset="./assets/images/mobile/benefitSlider4.jpg"
+                    />
+                    <source
+                      media="(max-width: 900px)"
+                      srcset="./assets/images/tablet/benefitSlider4.jpg"
+                    />
+                    <source
+                      media="(min-width: 901px)"
+                      srcset="./assets/images/desktop/benefitSlider4.jpg"
+                    />
+
+                    <img
+                      src="./assets/images/mobile/benefitSlider4.jpg"
+                      alt="A Building"
+                    />
+                  </picture>
+                </div>
+              </div>
+              <div
+                class="
+                  swiper-pagination
+                  swiper-pagination-bullets
+                  swiper-pagination-horizontal
+                "
+              >
+                <span
+                  class="
+                    swiper-pagination-bullet swiper-pagination-bullet-active
+                  "
+                ></span
+                ><span class="swiper-pagination-bullet"></span
+                ><span class="swiper-pagination-bullet"></span
+                ><span class="swiper-pagination-bullet"></span
+                ><span class="swiper-pagination-bullet"></span
+                ><span class="swiper-pagination-bullet"></span
+                ><span class="swiper-pagination-bullet"></span
+                ><span class="swiper-pagination-bullet"></span
+                ><span class="swiper-pagination-bullet"></span>
+              </div>
+              <span
+                class="swiper-notification"
+                aria-live="assertive"
+                aria-atomic="true"
+              ></span>
+            </div>
+          </div>
+        </article>
+        <section class="move-container">
+          <div class="move-description">
+            <p>
+              Mudate a GARGA UGARTE <br />
+              y descubrí una vida mejor.
+            </p>
+          </div>
+          <div class="move-image">
+            <picture>
+              <source
+                media="(max-width: 414px)"
+                srcset="./assets/images/mobile/moveImage.jpg"
+              />
+              <source
+                media="(max-width: 900px)"
+                srcset="./assets/images/tablet/moveImage.jpg"
+              />
+              <source
+                media="(min-width: 901px)"
+                srcset="./assets/images/desktop/moveImage.jpg"
+              />
+
+              <img
+                src="./assets/images/mobile/moveImage.jpg"
+                alt="A Building"
+              />
+            </picture>
+          </div>
+        </section>
+      </section>
+      <section class="map">
+        <article id="map"></article>
+        <article class="legend-container">
+          <div class="legend-content">
+            <h2>Cercanía</h2>
+            <ul>
+              <li>MEGATLON NUÑEZ</li>
+              <li>CLUB RIVER PLATE</li>
+              <li>CLUB OBRAS SANITARIAS</li>
+              <li>GOLF MUNICIPAL</li>
+              <li>BOSQUES DE PALERMO</li>
+              <li>ACCESO GRAL. PAZ</li>
+              <li>ACCESO AV. CANTILLO</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <section class="about-avilis-container">
+        <h2>Sobre Ávilis Real Estate</h2>
+        <p>Sobre Ávilis Real Estate</p>
+        <p>
+          Tras una larga trayectoria en la industria financiera, el conocimiento
+          del rubro y las oportunidades que presenta, decidimos dar nuestro paso
+          en la industria inmobiliaria haciendo lo que mejor sabemos: brindar
+          propuestas rentables para tu inversión.
+        </p>
+        <p>
+          Proyectos destinados al éxito: tangibles, innovadores, reales, con
+          números que hablan por sí mismos.
+        </p>
+        <p>Te invitamos a conocer más sobre nuestras casas y departamentos.</p>
+        <button class="btn-contact">Contacto</button>
       </section>
     </main>
     <footer></footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5TOZ9H9HoPbVTtEvcdJ5e8t5KQ-Cvm4A&callback=initMap"></script>
   </body>
 </html>
+
