@@ -5,7 +5,7 @@
   @include desktop {
     padding: 60px 40px;
     display: flex;
-    align-items: center;
+    align-items: start;
   }
   .about-description {
     max-width: 550px;
@@ -41,8 +41,10 @@
   }
   .about-image {
     text-align: center;
+    margin-top: 40px;
     @include desktop {
       width: 50%;
+      margin-top: 0px;
     }
     img {
       @include desktop {
