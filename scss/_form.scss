@@ -1,11 +1,12 @@
 .form-container {
+  background-color: $color6;
   @include padding;
   max-width: 768px;
   margin: auto;
 
   h3 {
     font: $font1;
-    color: $color3;
+    color: $fontColor1;
     margin-bottom: 20px;
     text-align: center;
 
@@ -28,21 +29,23 @@
       background: $color4;
       margin-bottom: 10px;
       width: 100%;
-      padding: 12px 8px;
+      padding: 12px;
       &::placeholder {
-        color: $color3;
+        color: $fontColor1;
         font: $font2;
+        letter-spacing: 0.05rem;
       }
     }
     textarea {
+      letter-spacing: 0.05rem;
       background: $color4;
       border: 0;
       height: 180px;
       width: 100%;
-      padding: 12px 8px;
+      padding: 12px;
       resize: none;
       &::placeholder {
-        color: $color3;
+        color: $fontColor1;
         font: $font2;
       }
     }

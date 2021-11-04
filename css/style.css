@@ -7,32 +7,33 @@
 }
 
 @font-face {
-  font-family: "Helvetica Neue LT Std";
+  font-family: "Helvetica Neue Roman Std";
   src: url("./../fonts/HelveticaNeueLTStd-Roman.woff2") format("woff2"), url("./../fonts/HelveticaNeueLTStd-Roman.woff") format("woff"), url("./../fonts/HelveticaNeueLTStd-Roman.ttf") format("truetype");
   font-weight: normal;
-  font-style: normal;
   font-display: auto;
 }
 
 @font-face {
-  font-family: "Helvetica Neue LT Std";
+  font-family: "Helvetica Neue Medium Std";
   src: url("./../fonts/HelveticaNeueLTStd-Md.woff2") format("woff2"), url("./../fonts/HelveticaNeueLTStd-Md.woff") format("woff"), url("./../fonts/HelveticaNeueLTStd-Md.ttf") format("truetype");
   font-weight: 500;
-  font-style: normal;
   font-display: auto;
 }
 
 @font-face {
-  font-family: "Helvetica Neue LT Std";
+  font-family: "Helvetica Neue Bd Std";
   src: url("./../fonts/HelveticaNeueLTStd-Bd.woff2") format("woff2"), url("./../fonts/HelveticaNeueLTStd-Bd.woff") format("woff"), url("./../fonts/HelveticaNeueLTStd-Bd.ttf") format("truetype");
   font-weight: bold;
-  font-style: normal;
   font-display: auto;
 }
 
 /* :root {
   font-size: 62.5%;
 } */
+/*Normal*/
+/*Light*/
+/*Bold*/
+/*Hard*/
 * {
   margin: 0;
   padding: 0;
@@ -46,9 +47,9 @@
 }
 
 body {
-  font: normal 1.6rem/2.3rem "Helvetica Neue LT Std";
+  font: normal 1.6rem/2.3rem "Helvetica Neue Roman Std";
   overflow-x: hidden;
-  letter-spacing: 0.05rem;
+  letter-spacing: 1.5px;
 }
 
 img {
@@ -71,7 +72,7 @@ header {
   width: 100vw;
   position: fixed;
   z-index: 10;
-  background-color: #c7ccc0;
+  background-color: #cfd5ca;
 }
 
 @media (min-width: 1024px) {
@@ -127,7 +128,7 @@ header .btn-container {
 }
 
 header .btn-container a {
-  font: bold 1.6rem/2.2rem "Helvetica Neue LT Std";
+  font: bold 1.6rem/2.2rem "Helvetica Neue Roman Std";
   background-color: #abb5a0;
   border: 0;
   outline: none;
@@ -175,13 +176,14 @@ header .btn-container a {
 }
 
 .form-container {
+  background-color: #f4f6f2;
   padding: 60px 20px;
   max-width: 768px;
   margin: auto;
 }
 
 .form-container h3 {
-  font: 500 2rem/2.2rem "Helvetica Neue LT Std";
+  font: normal 2rem/2.2rem "Helvetica Neue Medium Std";
   color: #384a51;
   margin-bottom: 20px;
   text-align: center;
@@ -213,35 +215,40 @@ header .btn-container a {
   background: #d9e0d4;
   margin-bottom: 10px;
   width: 100%;
-  padding: 12px 8px;
+  padding: 12px;
 }
 
 .form-container form input::-webkit-input-placeholder {
   color: #384a51;
   font: normal 1.4rem/2.2rem "Helvetica Neue LT Std";
+  letter-spacing: 0.05rem;
 }
 
 .form-container form input:-ms-input-placeholder {
   color: #384a51;
   font: normal 1.4rem/2.2rem "Helvetica Neue LT Std";
+  letter-spacing: 0.05rem;
 }
 
 .form-container form input::-ms-input-placeholder {
   color: #384a51;
   font: normal 1.4rem/2.2rem "Helvetica Neue LT Std";
+  letter-spacing: 0.05rem;
 }
 
 .form-container form input::placeholder {
   color: #384a51;
   font: normal 1.4rem/2.2rem "Helvetica Neue LT Std";
+  letter-spacing: 0.05rem;
 }
 
 .form-container form textarea {
+  letter-spacing: 0.05rem;
   background: #d9e0d4;
   border: 0;
   height: 180px;
   width: 100%;
-  padding: 12px 8px;
+  padding: 12px;
   resize: none;
 }
 
@@ -266,7 +273,7 @@ header .btn-container a {
 }
 
 .form-container form button {
-  font: bold 1.6rem/2.2rem "Helvetica Neue LT Std";
+  font: bold 1.6rem/2.2rem "Helvetica Neue Roman Std";
   background-color: #abb5a0;
   border: 0;
   outline: none;
@@ -285,6 +292,7 @@ header .btn-container a {
 
 .about-container {
   padding: 60px 20px;
+  padding-bottom: 30px;
   background: #384a51;
   color: #ffffff;
 }
@@ -324,8 +332,7 @@ header .btn-container a {
 }
 
 .about-container .about-description h3 {
-  /* margin-bottom: 20px; */
-  font: 500 2rem/2.2rem "Helvetica Neue LT Std";
+  font: normal 2.2rem/2.6rem "Helvetica Neue Medium Std";
 }
 
 @media (min-width: 1024px) {
@@ -335,12 +342,12 @@ header .btn-container a {
   }
 }
 
-.about-container .about-description p {
-  /* margin-bottom: 20px; */
+.about-container .about-description p:nth-child(2), .about-container .about-description p:nth-child(3) {
+  font: normal 1.6rem/2rem "Helvetica Neue LT Std";
 }
 
 .about-container .about-description p:nth-child(4) {
-  font: bold 1.6rem/2.2rem "Helvetica Neue LT Std";
+  font: normal 1.6rem/2rem "Helvetica Neue Bd Std";
 }
 
 @media (min-width: 1024px) {
@@ -425,7 +432,7 @@ header .btn-container a {
 }
 
 .benefit-container .benefit-content .benefit-description h3 {
-  font: 500 2rem/2.2rem "Helvetica Neue LT Std";
+  font: normal 2rem/2.2rem "Helvetica Neue Medium Std";
 }
 
 @media (min-width: 1024px) {
@@ -436,17 +443,17 @@ header .btn-container a {
 }
 
 .benefit-container .benefit-content .benefit-description p {
-  /* margin-bottom: 20px; */
-}
-
-.benefit-container .benefit-content .benefit-description p:nth-child(4) {
-  font: bold 1.6rem/2.2rem "Helvetica Neue LT Std";
+  font: normal 1.6rem/2.2rem "Helvetica Neue LT Std";
+  /* &:nth-child(4) {
+          font: $fontBodyBold;
+        } */
 }
 
 .benefit-container .benefit-content .benefit-description ul {
   padding-left: 20px;
-  padding-bottom: 40px;
-  font: 300 1.4rem/2.2rem "Helvetica Neue LT Std";
+  padding-bottom: 70px;
+  letter-spacing: 3px;
+  font: normal 1.5rem/2.4rem "Helvetica Neue LT Std";
 }
 
 .benefit-container .benefit-content .benefit-description div {
@@ -496,7 +503,7 @@ header .btn-container a {
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-  bottom: 0;
+  bottom: 40px;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
@@ -507,6 +514,7 @@ header .btn-container a {
 
 .move-container {
   padding: 60px 20px;
+  padding-bottom: 30px;
   background: #384a51;
   color: #ffffff;
 }
@@ -539,7 +547,7 @@ header .btn-container a {
 
 .move-container .move-description p {
   margin-bottom: 40px;
-  font: 500 2rem/2.2rem "Helvetica Neue LT Std";
+  font: normal 2rem/2.2rem "Helvetica Neue Medium Std";
 }
 
 @media (min-width: 1024px) {
@@ -604,8 +612,8 @@ header .btn-container a {
 }
 
 .legend-container .legend-content {
-  background-color: #d9e0d4;
-  padding: 15px;
+  background-color: #abb5a0;
+  padding: 15px 15px 50px;
 }
 
 @media (min-width: 1024px) {
@@ -617,13 +625,14 @@ header .btn-container a {
 .legend-container .legend-content h2 {
   color: #384a51;
   margin-bottom: 10px;
-  font: 500 2rem/2.2rem "Helvetica Neue LT Std";
+  font: normal 2rem/2.2rem "Helvetica Neue Medium Std";
 }
 
 .legend-container .legend-content ul {
   color: #384a51;
   padding-left: 20px;
-  font: normal 1.6rem/2.3rem "Helvetica Neue LT Std";
+  letter-spacing: 3px;
+  font: normal 1.5rem/2.4rem "Helvetica Neue LT Std";
 }
 
 .about-avilis-container {
@@ -638,7 +647,7 @@ header .btn-container a {
 }
 
 .about-avilis-container .about-avilis-content h3 {
-  font: 500 2rem/2.2rem "Helvetica Neue LT Std";
+  font: normal 2rem/2.2rem "Helvetica Neue Medium Std";
   margin-bottom: 30px;
 }
 
@@ -650,7 +659,7 @@ header .btn-container a {
 
 .about-avilis-container .about-avilis-content p {
   margin-bottom: 30px;
-  font: 300 1.6rem/2rem "Helvetica Neue LT Std";
+  font: normal 1.6rem/2rem "Helvetica Neue LT Std";
 }
 
 @media (min-width: 1024px) {
@@ -667,7 +676,7 @@ header .btn-container a {
 
 @media (min-width: 1024px) {
   .about-avilis-container .about-avilis-content p:nth-child(4) {
-    font: 500 2rem/2.2rem "Helvetica Neue LT Std";
+    font: normal 1.6rem/2rem "Helvetica Neue Bd Std";
   }
 }
 
@@ -684,7 +693,6 @@ header .btn-container a {
   color: #ffffff;
   border-radius: 7px;
   padding: 10px 15px;
-  font-size: 1.6rem;
 }
 
 @media (min-width: 1024px) {
@@ -721,6 +729,10 @@ footer .footer-content .logo-container {
   margin-bottom: 10px;
 }
 
+footer .footer-content .logo-container a img {
+  width: 15%;
+}
+
 @media (min-width: 1024px) {
   footer .footer-content .social-container {
     display: -webkit-box;
@@ -746,13 +758,13 @@ footer .footer-content .social-container a {
 @media (min-width: 1024px) {
   footer .footer-content .social-container a {
     width: 50%;
-    font: normal 1.8rem/2rem "Helvetica Neue LT Std";
+    font: normal 1.8rem/2rem "Helvetica Neue Roman Std";
   }
 }
 
 footer .remo-container a {
   position: absolute;
-  bottom: 20px;
+  bottom: 50px;
   right: 20px;
 }
 
@@ -763,6 +775,6 @@ footer .remo-container a {
 }
 
 footer .remo-container a img {
-  width: 70%;
+  width: 5px;
 }
 /*# sourceMappingURL=style.css.map */

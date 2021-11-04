@@ -1,5 +1,6 @@
 .move-container {
   @include padding;
+  padding-bottom: 30px;
   background: $color3;
   color: $white;
   @include desktop {

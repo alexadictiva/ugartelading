@@ -9,31 +9,28 @@
 }
 
 @font-face {
-  font-family: "Helvetica Neue LT Std";
+  font-family: "Helvetica Neue Roman Std";
   src: url("./../fonts/HelveticaNeueLTStd-Roman.woff2") format("woff2"),
     url("./../fonts/HelveticaNeueLTStd-Roman.woff") format("woff"),
     url("./../fonts/HelveticaNeueLTStd-Roman.ttf") format("truetype");
   font-weight: normal;
-  font-style: normal;
   font-display: auto;
 }
 
 @font-face {
-  font-family: "Helvetica Neue LT Std";
+  font-family: "Helvetica Neue Medium Std";
   src: url("./../fonts/HelveticaNeueLTStd-Md.woff2") format("woff2"),
     url("./../fonts/HelveticaNeueLTStd-Md.woff") format("woff"),
     url("./../fonts/HelveticaNeueLTStd-Md.ttf") format("truetype");
   font-weight: 500;
-  font-style: normal;
   font-display: auto;
 }
 
 @font-face {
-  font-family: "Helvetica Neue LT Std";
+  font-family: "Helvetica Neue Bd Std";
   src: url("./../fonts/HelveticaNeueLTStd-Bd.woff2") format("woff2"),
     url("./../fonts/HelveticaNeueLTStd-Bd.woff") format("woff"),
     url("./../fonts/HelveticaNeueLTStd-Bd.ttf") format("truetype");
   font-weight: bold;
-  font-style: normal;
   font-display: auto;
 }

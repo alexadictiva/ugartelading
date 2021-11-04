@@ -1,9 +1,119 @@
-/*slider*/
+// Slider
 var swiper = new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
   },
 });
+/*
+// ANIMACIONES WOW
+function wowAnimationFunctions() {
+  // PORTADA WOW
+  var portada = $("#portada.title-img");
+  portada.find("h1, h2, h3, h4, h5, h6, a, p").addClass("wow fadeInUp");
+  portada.find("picture, .bg-shadow").addClass("wow fadeIn");
+  // SECTIONS WOW
+  var htmlsection = $("section");
+  htmlsection
+    .find(
+      "h1, h2, h3, h4, h5, h6, p, a, li, img, input, textarea, button, .button, label, table, table th, table td, .collapsable-container, .sub-item, .custom-select, iframe",
+      "#map"
+    )
+    .addClass("wow fadeInUp");
+  htmlsection.find(".no-wow, #map *").removeClass("wow");
+  // htmlsection.find('.line').addClass('wow fadeIn')
+
+  // FOOTER WOW
+  // var footer = $('footer')
+  // footer.find('h1, h2, h3, h4, h5, h6, p, a, img').addClass('wow fadeInUp')
+
+  // GENERAL WOW DELAYS
+  portada.each(function () {
+    i = 1;
+    $(this)
+      .find(".wow")
+      .each(function () {
+        var wowDelay = (0.5 * i).toFixed(2);
+        $(this).attr("data-wow-delay", wowDelay + "s");
+        i++;
+      });
+  });
+
+  // IF MOBILE WOW DELAYS
+  // if (!isMobile) {
+
+  // portada.each(function () {
+  //     i = 1
+  //     $(this).find('.wow').each(function () {
+  //         var wowDelay = (0.2 * i).toFixed(2)
+  //         if (wowDelay > 0.9) {
+  //             wowDelay = 0.3
+  //         } else {}
+  //         i++
+  //         $(this).attr('data-wow-delay', wowDelay + 's')
+  //     })
+  // })
+
+  // htmlsection.each(function () {
+  //     i = 1
+  //     $(this).find('.wow').each(function () {
+  //         var wowDelay = (0.2 * i).toFixed(2)
+  //         if (wowDelay > 0.9) {
+  //             wowDelay = 0.3
+  //         } else {}
+  //         i++
+  //         $(this).attr('data-wow-delay', wowDelay + 's')
+  //     })
+  // })
+
+  htmlsection.each(function () {
+    i = 1;
+    $(this)
+      .find(".sub-item.wow")
+      .each(function () {
+        if (wowDelay > 1) {
+          wowDelay = 0;
+        }
+        var wowDelay = (0.3 + 0.04 * i).toFixed(2);
+        $(this).attr("data-wow-delay", wowDelay + "s");
+        i++;
+      });
+  });
+
+  // footer.each(function () {
+  //     i = 1
+  //     $(this).find('.wow').each(function () {
+  //         var wowDelay = (0.03 * i).toFixed(2)
+  //         $(this).attr('data-wow-delay', wowDelay + 's')
+  //         i++
+  //     })
+  // })
+  // } else {
+  //     $('.wow.fadeIn').attr('data-wow-delay', '0.7s')
+  // }
+
+  // WOW INIT
+  var wowContainer;
+  var wowOffset;
+  if (!isMobile) {
+    var wowContainer = "window";
+    var wowOffset = 0;
+  } else {
+    var wowContainer = "#wrapper";
+    var wowOffset = 0;
+  }
+
+  var wow = new WOW({
+    scrollContainer: wowContainer,
+    boxClass: "wow", // default
+    animateClass: "animated", // default
+    offset: wowOffset, // default
+    mobile: true, // default
+    live: true, // default
+  });
+  wow.init();
+}
+*/
+
 // Google maps
 function initMap() {
   const zoom = 17;

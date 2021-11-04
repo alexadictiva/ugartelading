@@ -1,21 +1,32 @@
 /* :root {
   font-size: 62.5%;
 } */
-$fontBase: "Helvetica Neue LT Std";
+$fontBase: "Helvetica Neue Roman Std"; /*Normal*/
+$fontBase1: "Helvetica Neue LT Std"; /*Light*/
+$fontBase2: "Helvetica Neue Medium Std"; /*Bold*/
+$fontBase3: "Helvetica Neue Bd Std"; /*Hard*/
 
 $white: #ffffff;
 $overlay: #d4daceb9;
 $black: #000000;
 $color1: #d4dace;
-$color2: #c7ccc0;
+$color2: #cfd5ca;
 $color3: #384a51;
 $color4: #d9e0d4;
 $color5: #abb5a0;
+$fontColor1: #384a51;
+$fontColor2: #d9e0d4;
+$color6: #f4f6f2;
 
 $fontBody: normal 1.6rem/2.3rem $fontBase;
 $fontBodyBold: bold 1.6rem/2.2rem $fontBase;
-$font1: 500 2rem/2.2rem $fontBase;
-$font2: normal 1.4rem/2.2rem $fontBase;
+$font1: normal 2rem/2.2rem $fontBase2;
+$font2: normal 1.4rem/2.2rem $fontBase1;
+$font31: normal 2.2rem/2.6rem $fontBase2;
+$font32: normal 1.6rem/2rem $fontBase1;
+$font4: normal 1.6rem/2rem $fontBase1;
+$font33: normal 1.6rem/2.2rem $fontBase1;
+$font34: normal 1.6rem/2rem $fontBase3;
+$font35: normal 1.5rem/2.4rem $fontBase1;
 $font3: 300 1.4rem/2.2rem $fontBase;
-$font4: 300 1.6rem/2rem $fontBase;
 $font5: normal 1.8rem/2rem $fontBase;

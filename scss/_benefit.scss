@@ -35,16 +35,17 @@
         }
       }
       p {
-        /* margin-bottom: 20px; */
+        font: $font33;
 
-        &:nth-child(4) {
+        /* &:nth-child(4) {
           font: $fontBodyBold;
-        }
+        } */
       }
       ul {
         padding-left: 20px;
-        padding-bottom: 40px;
-        font: $font3;
+        padding-bottom: 70px;
+        letter-spacing: 3px;
+        font: $font35;
       }
       div {
         margin: 40px 0;
@@ -85,7 +86,7 @@
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-  bottom: 0;
+  bottom: 40px;
 }
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets

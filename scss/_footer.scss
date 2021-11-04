@@ -13,6 +13,11 @@ footer {
     }
     .logo-container {
       margin-bottom: 10px;
+      a {
+        img {
+          width: 15%;
+        }
+      }
     }
     .social-container {
       @include desktop {
@@ -36,13 +41,13 @@ footer {
   .remo-container {
     a {
       position: absolute;
-      bottom: 20px;
+      bottom: 50px;
       right: 20px;
       @include desktop {
         bottom: 45px;
       }
       img {
-        width: 70%;
+        width: 5px;
       }
     }
   }

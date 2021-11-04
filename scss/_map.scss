@@ -22,8 +22,8 @@
     right: 0;
   }
   .legend-content {
-    background-color: $color4;
-    padding: 15px;
+    background-color: $color5;
+    padding: 15px 15px 50px;
     @include desktop {
       padding: 35px;
     }
@@ -36,8 +36,8 @@
     ul {
       color: $color3;
       padding-left: 20px;
-
-      font: $fontBody;
+      letter-spacing: 3px;
+      font: $font35;
     }
   }
 }
