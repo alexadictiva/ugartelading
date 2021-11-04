@@ -1,5 +1,5 @@
 .intro-container {
-  background-image: url("./../assets/images/bgIntro.svg");
+  background-image: url("./../assets/images/bgIntro.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,9 +14,9 @@
     h1 {
       text-align: center;
       img {
-        width: 50%;
+        width: 170px;
         @include desktop {
-          width: 80%;
+          width: 300px;
         }
       }
     }

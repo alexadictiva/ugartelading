@@ -10,6 +10,7 @@
     align-items: center;
   }
   .move-description {
+    color: $fontColor2;
     max-width: 550px;
     @include desktop {
       width: 50%;

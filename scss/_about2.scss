@@ -12,12 +12,13 @@
 
     h3 {
       font: $font1;
-
+      color: $fontColor2;
       @include desktop {
         font-size: 3rem;
       }
     }
     p {
+      color: $fontColor2;
       font: $font38;
       @include desktop {
         font-size: 2.2rem;

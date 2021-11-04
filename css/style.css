@@ -137,7 +137,7 @@ header .btn-container a {
 }
 
 .intro-container {
-  background-image: url("./../assets/images/bgIntro.svg");
+  background-image: url("./../assets/images/bgIntro.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -164,12 +164,12 @@ header .btn-container a {
 }
 
 .intro-container .overlay h1 img {
-  width: 50%;
+  width: 170px;
 }
 
 @media (min-width: 1024px) {
   .intro-container .overlay h1 img {
-    width: 80%;
+    width: 300px;
   }
 }
 
@@ -331,6 +331,7 @@ header .btn-container a {
 }
 
 .about-container .about-description h3 {
+  color: #d9e0d4;
   font: normal 1.9rem/2.2rem "Helvetica Neue Medium Std";
 }
 
@@ -339,6 +340,10 @@ header .btn-container a {
     font-size: 2.2rem;
     line-height: 3rem;
   }
+}
+
+.about-container .about-description p {
+  color: #d9e0d4;
 }
 
 .about-container .about-description p:nth-child(2), .about-container .about-description p:nth-child(3) {
@@ -541,6 +546,7 @@ header .btn-container a {
 }
 
 .move-container .move-description {
+  color: #d9e0d4;
   max-width: 550px;
 }
 
@@ -666,6 +672,7 @@ header .btn-container a {
 
 .about-avilis-container .about-avilis-content h3 {
   font: normal 1.9rem/2.2rem "Helvetica Neue Medium Std";
+  color: #d9e0d4;
 }
 
 @media (min-width: 1024px) {
@@ -675,6 +682,7 @@ header .btn-container a {
 }
 
 .about-avilis-container .about-avilis-content p {
+  color: #d9e0d4;
   font: normal 1.55rem/2rem "Helvetica Neue LT Std";
 }
 
@@ -752,7 +760,13 @@ footer .footer-content .logo-container {
 }
 
 footer .footer-content .logo-container a img {
-  width: 15%;
+  width: 60px;
+}
+
+@media (min-width: 1024px) {
+  footer .footer-content .logo-container a img {
+    width: 100px;
+  }
 }
 
 @media (min-width: 1024px) {
