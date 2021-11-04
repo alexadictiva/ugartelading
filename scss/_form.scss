@@ -24,12 +24,12 @@
       }
     }
     input {
-      height: 60px;
+      height: 70px;
       border: 0;
       background: $color4;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
       width: 100%;
-      padding: 12px;
+      padding: 12px 18px;
       &::placeholder {
         color: $fontColor1;
         font: $font2;
@@ -40,9 +40,9 @@
       letter-spacing: 0.05rem;
       background: $color4;
       border: 0;
-      height: 180px;
+      height: 220px;
       width: 100%;
-      padding: 12px;
+      padding: 12px 18px;
       resize: none;
       &::placeholder {
         color: $fontColor1;

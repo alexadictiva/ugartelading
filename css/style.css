@@ -107,7 +107,7 @@ header nav {
 }
 
 header nav img {
-  height: 40px;
+  height: 25px;
   /* @include desktop {
         height: 70%;
       } */
@@ -126,7 +126,7 @@ header .btn-container {
 
 header .btn-container a {
   letter-spacing: 1.5px;
-  font: normal 1.4rem/2.2rem "Helvetica Neue LT Std";
+  font: normal 1.5rem/2.2rem "Helvetica Neue LT Std";
   background-color: #abb5a0;
   border: 0;
   outline: none;
@@ -141,7 +141,7 @@ header .btn-container a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 95vh;
+  height: 55vh;
 }
 
 .intro-container .overlay {
@@ -175,13 +175,13 @@ header .btn-container a {
 
 .form-container {
   background-color: #f4f6f2;
-  padding: 60px 20px;
+  padding: 60px 40px;
   max-width: 768px;
   margin: auto;
 }
 
 .form-container h3 {
-  font: normal 1.8rem/2.2rem "Helvetica Neue Medium Std";
+  font: normal 1.9rem/2.2rem "Helvetica Neue Medium Std";
   color: #384a51;
   margin-bottom: 20px;
   text-align: center;
@@ -208,35 +208,35 @@ header .btn-container a {
 }
 
 .form-container form input {
-  height: 60px;
+  height: 70px;
   border: 0;
   background: #d9e0d4;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   width: 100%;
-  padding: 12px;
+  padding: 12px 18px;
 }
 
 .form-container form input::-webkit-input-placeholder {
   color: #384a51;
-  font: normal 1.4rem/2.2rem "Helvetica Neue LT Std";
+  font: normal 1.5rem/2.2rem "Helvetica Neue LT Std";
   letter-spacing: 0.05rem;
 }
 
 .form-container form input:-ms-input-placeholder {
   color: #384a51;
-  font: normal 1.4rem/2.2rem "Helvetica Neue LT Std";
+  font: normal 1.5rem/2.2rem "Helvetica Neue LT Std";
   letter-spacing: 0.05rem;
 }
 
 .form-container form input::-ms-input-placeholder {
   color: #384a51;
-  font: normal 1.4rem/2.2rem "Helvetica Neue LT Std";
+  font: normal 1.5rem/2.2rem "Helvetica Neue LT Std";
   letter-spacing: 0.05rem;
 }
 
 .form-container form input::placeholder {
   color: #384a51;
-  font: normal 1.4rem/2.2rem "Helvetica Neue LT Std";
+  font: normal 1.5rem/2.2rem "Helvetica Neue LT Std";
   letter-spacing: 0.05rem;
 }
 
@@ -244,34 +244,34 @@ header .btn-container a {
   letter-spacing: 0.05rem;
   background: #d9e0d4;
   border: 0;
-  height: 180px;
+  height: 220px;
   width: 100%;
-  padding: 12px;
+  padding: 12px 18px;
   resize: none;
 }
 
 .form-container form textarea::-webkit-input-placeholder {
   color: #384a51;
-  font: normal 1.4rem/2.2rem "Helvetica Neue LT Std";
+  font: normal 1.5rem/2.2rem "Helvetica Neue LT Std";
 }
 
 .form-container form textarea:-ms-input-placeholder {
   color: #384a51;
-  font: normal 1.4rem/2.2rem "Helvetica Neue LT Std";
+  font: normal 1.5rem/2.2rem "Helvetica Neue LT Std";
 }
 
 .form-container form textarea::-ms-input-placeholder {
   color: #384a51;
-  font: normal 1.4rem/2.2rem "Helvetica Neue LT Std";
+  font: normal 1.5rem/2.2rem "Helvetica Neue LT Std";
 }
 
 .form-container form textarea::placeholder {
   color: #384a51;
-  font: normal 1.4rem/2.2rem "Helvetica Neue LT Std";
+  font: normal 1.5rem/2.2rem "Helvetica Neue LT Std";
 }
 
 .form-container form button {
-  font: normal 1.4rem/2.2rem "Helvetica Neue LT Std";
+  font: normal 1.5rem/2.2rem "Helvetica Neue LT Std";
   letter-spacing: 1.5px;
   background-color: #abb5a0;
   border: 0;
@@ -290,7 +290,7 @@ header .btn-container a {
 }
 
 .about-container {
-  padding: 60px 20px;
+  padding: 60px 40px;
   padding-bottom: 30px;
   background: #384a51;
   color: #ffffff;
@@ -320,7 +320,7 @@ header .btn-container a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 30px;
+  gap: 15px;
 }
 
 @media (min-width: 1024px) {
@@ -331,7 +331,7 @@ header .btn-container a {
 }
 
 .about-container .about-description h3 {
-  font: normal 1.8rem/2.2rem "Helvetica Neue Medium Std";
+  font: normal 1.9rem/2.2rem "Helvetica Neue Medium Std";
 }
 
 @media (min-width: 1024px) {
@@ -342,7 +342,7 @@ header .btn-container a {
 }
 
 .about-container .about-description p:nth-child(2), .about-container .about-description p:nth-child(3) {
-  font: normal 1.5rem/2rem "Helvetica Neue LT Std";
+  font: normal 1.6rem/2rem "Helvetica Neue LT Std";
 }
 
 .about-container .about-description p:nth-child(4) {
@@ -358,6 +358,11 @@ header .btn-container a {
 
 .about-container .about-description div {
   text-align: center;
+  margin: 25px 0 0;
+}
+
+.about-container .about-description div img {
+  width: 20px;
 }
 
 .about-container .about-image {
@@ -379,7 +384,7 @@ header .btn-container a {
 }
 
 .benefit-container .benefit-content {
-  padding: 60px 20px;
+  padding: 60px 40px;
   background: #d9e0d4;
   color: #384a51;
   padding-bottom: 0;
@@ -420,7 +425,7 @@ header .btn-container a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 30px;
+  gap: 20px;
 }
 
 @media (min-width: 1024px) {
@@ -431,7 +436,7 @@ header .btn-container a {
 }
 
 .benefit-container .benefit-content .benefit-description h3 {
-  font: normal 1.8rem/2.2rem "Helvetica Neue Medium Std";
+  font: normal 1.9rem/2.2rem "Helvetica Neue Medium Std";
 }
 
 @media (min-width: 1024px) {
@@ -442,21 +447,25 @@ header .btn-container a {
 }
 
 .benefit-container .benefit-content .benefit-description p {
-  font: normal 1.5rem/2.2rem "Helvetica Neue LT Std";
+  font: normal 1.6rem/1.9rem "Helvetica Neue LT Std";
   /* &:nth-child(4) {
           font: $fontBodyBold;
         } */
 }
 
+.benefit-container .benefit-content .benefit-description div img {
+  width: 20px;
+}
+
 .benefit-container .benefit-content .benefit-description ul {
   padding-left: 20px;
-  padding-bottom: 70px;
+  padding-bottom: 20px;
   letter-spacing: 3px;
-  font: normal 1.4rem/2.4rem "Helvetica Neue LT Std";
+  font: normal 1.6rem/3rem "Helvetica Neue LT Std";
 }
 
 .benefit-container .benefit-content .benefit-description div {
-  margin: 40px 0;
+  margin: 20px 0 40px;
   text-align: center;
 }
 
@@ -477,13 +486,13 @@ header .btn-container a {
 }
 
 .benefit-container .variant {
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 
 /*slider*/
 .swiper {
   width: 100%;
-  padding: 20px 0;
+  padding: 20px 0 0;
 }
 
 .swiper-slide {
@@ -512,7 +521,8 @@ header .btn-container a {
 }
 
 .move-container {
-  padding: 60px 20px;
+  padding: 60px 40px;
+  padding-top: 45px;
   padding-bottom: 30px;
   background: #384a51;
   color: #ffffff;
@@ -545,8 +555,8 @@ header .btn-container a {
 }
 
 .move-container .move-description p {
-  margin-bottom: 40px;
-  font: normal 1.8rem/2.2rem "Helvetica Neue Medium Std";
+  margin-bottom: 60px;
+  font: normal 1.9rem/2.2rem "Helvetica Neue Medium Std";
 }
 
 @media (min-width: 1024px) {
@@ -596,7 +606,7 @@ header .btn-container a {
 
 .legend-container {
   background-color: #384a51;
-  padding: 20px;
+  padding: 35px;
 }
 
 @media (min-width: 1024px) {
@@ -612,7 +622,7 @@ header .btn-container a {
 
 .legend-container .legend-content {
   background-color: #abb5a0;
-  padding: 15px 15px 50px;
+  padding: 20px;
 }
 
 @media (min-width: 1024px) {
@@ -624,18 +634,19 @@ header .btn-container a {
 .legend-container .legend-content h2 {
   color: #384a51;
   margin-bottom: 20px;
-  font: normal 1.8rem/2.2rem "Helvetica Neue Medium Std";
+  font: normal 1.9rem/2.2rem "Helvetica Neue Medium Std";
 }
 
 .legend-container .legend-content ul {
   color: #384a51;
   padding-left: 20px;
   letter-spacing: 5px;
-  font: normal 1.4rem/2.4rem "Helvetica Neue LT Std";
+  font: normal 1.6rem/2.7rem "Helvetica Neue LT Std";
 }
 
 .about-avilis-container {
-  padding: 60px 20px;
+  padding: 60px 40px;
+  padding-top: 20px;
   background-color: #384a51;
   color: #ffffff;
 }
@@ -643,11 +654,18 @@ header .btn-container a {
 .about-avilis-container .about-avilis-content {
   max-width: 650px;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
 }
 
 .about-avilis-container .about-avilis-content h3 {
-  font: normal 1.8rem/2.2rem "Helvetica Neue Medium Std";
-  margin-bottom: 30px;
+  font: normal 1.9rem/2.2rem "Helvetica Neue Medium Std";
 }
 
 @media (min-width: 1024px) {
@@ -657,8 +675,7 @@ header .btn-container a {
 }
 
 .about-avilis-container .about-avilis-content p {
-  margin-bottom: 30px;
-  font: normal 1.5rem/2rem "Helvetica Neue LT Std";
+  font: normal 1.55rem/2rem "Helvetica Neue LT Std";
 }
 
 @media (min-width: 1024px) {
@@ -666,6 +683,10 @@ header .btn-container a {
     font-size: 2.2rem;
     line-height: 2.7rem;
   }
+}
+
+.about-avilis-container .about-avilis-content p:nth-child(2), .about-avilis-container .about-avilis-content p:nth-child(3) {
+  font: normal 1.5rem/1.8rem "Helvetica Neue LT Std";
 }
 
 .about-avilis-container .about-avilis-content p:nth-child(4) {
@@ -707,7 +728,7 @@ footer {
 }
 
 footer .footer-content {
-  padding: 60px 20px;
+  padding: 60px 40px;
   position: relative;
   text-align: center;
   max-width: calc(94%);
@@ -745,6 +766,7 @@ footer .footer-content .logo-container a img {
 }
 
 footer .footer-content .social-container a {
+  font: normal 1.2rem/1.7rem "Helvetica Neue Roman Std";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -756,10 +778,14 @@ footer .footer-content .social-container a {
   margin-bottom: 10px;
 }
 
+footer .footer-content .social-container a img {
+  width: 15px;
+}
+
 @media (min-width: 1024px) {
   footer .footer-content .social-container a {
     width: 50%;
-    font: normal 1.8rem/2rem "Helvetica Neue Roman Std";
+    font: normal 1.9rem/2rem "Helvetica Neue Roman Std";
   }
 }
 
