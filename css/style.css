@@ -47,7 +47,7 @@
 }
 
 body {
-  font: normal 1.6rem/2.3rem "Helvetica Neue Roman Std";
+  font: normal 1.5rem/2.3rem "Helvetica Neue Roman Std";
   overflow-x: hidden;
   letter-spacing: 1.5px;
 }
@@ -107,13 +107,10 @@ header nav {
 }
 
 header nav img {
-  height: 50%;
-}
-
-@media (min-width: 1024px) {
-  header nav img {
-    height: 70%;
-  }
+  height: 40px;
+  /* @include desktop {
+        height: 70%;
+      } */
 }
 
 header .btn-container {
@@ -128,7 +125,8 @@ header .btn-container {
 }
 
 header .btn-container a {
-  font: bold 1.6rem/2.2rem "Helvetica Neue Roman Std";
+  letter-spacing: 1.5px;
+  font: normal 1.4rem/2.2rem "Helvetica Neue LT Std";
   background-color: #abb5a0;
   border: 0;
   outline: none;
@@ -183,7 +181,7 @@ header .btn-container a {
 }
 
 .form-container h3 {
-  font: normal 2rem/2.2rem "Helvetica Neue Medium Std";
+  font: normal 1.8rem/2.2rem "Helvetica Neue Medium Std";
   color: #384a51;
   margin-bottom: 20px;
   text-align: center;
@@ -192,7 +190,7 @@ header .btn-container a {
 @media (min-width: 1024px) {
   .form-container h3 {
     text-align: left;
-    font-size: 2.4rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -273,7 +271,8 @@ header .btn-container a {
 }
 
 .form-container form button {
-  font: bold 1.6rem/2.2rem "Helvetica Neue Roman Std";
+  font: normal 1.4rem/2.2rem "Helvetica Neue LT Std";
+  letter-spacing: 1.5px;
   background-color: #abb5a0;
   border: 0;
   outline: none;
@@ -332,22 +331,22 @@ header .btn-container a {
 }
 
 .about-container .about-description h3 {
-  font: normal 2.2rem/2.6rem "Helvetica Neue Medium Std";
+  font: normal 1.8rem/2.2rem "Helvetica Neue Medium Std";
 }
 
 @media (min-width: 1024px) {
   .about-container .about-description h3 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     line-height: 3rem;
   }
 }
 
 .about-container .about-description p:nth-child(2), .about-container .about-description p:nth-child(3) {
-  font: normal 1.6rem/2rem "Helvetica Neue LT Std";
+  font: normal 1.5rem/2rem "Helvetica Neue LT Std";
 }
 
 .about-container .about-description p:nth-child(4) {
-  font: normal 1.6rem/2rem "Helvetica Neue Bd Std";
+  font: normal 1.5rem/2rem "Helvetica Neue Bd Std";
 }
 
 @media (min-width: 1024px) {
@@ -432,7 +431,7 @@ header .btn-container a {
 }
 
 .benefit-container .benefit-content .benefit-description h3 {
-  font: normal 2rem/2.2rem "Helvetica Neue Medium Std";
+  font: normal 1.8rem/2.2rem "Helvetica Neue Medium Std";
 }
 
 @media (min-width: 1024px) {
@@ -443,7 +442,7 @@ header .btn-container a {
 }
 
 .benefit-container .benefit-content .benefit-description p {
-  font: normal 1.6rem/2.2rem "Helvetica Neue LT Std";
+  font: normal 1.5rem/2.2rem "Helvetica Neue LT Std";
   /* &:nth-child(4) {
           font: $fontBodyBold;
         } */
@@ -453,7 +452,7 @@ header .btn-container a {
   padding-left: 20px;
   padding-bottom: 70px;
   letter-spacing: 3px;
-  font: normal 1.5rem/2.4rem "Helvetica Neue LT Std";
+  font: normal 1.4rem/2.4rem "Helvetica Neue LT Std";
 }
 
 .benefit-container .benefit-content .benefit-description div {
@@ -547,7 +546,7 @@ header .btn-container a {
 
 .move-container .move-description p {
   margin-bottom: 40px;
-  font: normal 2rem/2.2rem "Helvetica Neue Medium Std";
+  font: normal 1.8rem/2.2rem "Helvetica Neue Medium Std";
 }
 
 @media (min-width: 1024px) {
@@ -624,15 +623,15 @@ header .btn-container a {
 
 .legend-container .legend-content h2 {
   color: #384a51;
-  margin-bottom: 10px;
-  font: normal 2rem/2.2rem "Helvetica Neue Medium Std";
+  margin-bottom: 20px;
+  font: normal 1.8rem/2.2rem "Helvetica Neue Medium Std";
 }
 
 .legend-container .legend-content ul {
   color: #384a51;
   padding-left: 20px;
-  letter-spacing: 3px;
-  font: normal 1.5rem/2.4rem "Helvetica Neue LT Std";
+  letter-spacing: 5px;
+  font: normal 1.4rem/2.4rem "Helvetica Neue LT Std";
 }
 
 .about-avilis-container {
@@ -647,7 +646,7 @@ header .btn-container a {
 }
 
 .about-avilis-container .about-avilis-content h3 {
-  font: normal 2rem/2.2rem "Helvetica Neue Medium Std";
+  font: normal 1.8rem/2.2rem "Helvetica Neue Medium Std";
   margin-bottom: 30px;
 }
 
@@ -659,7 +658,7 @@ header .btn-container a {
 
 .about-avilis-container .about-avilis-content p {
   margin-bottom: 30px;
-  font: normal 1.6rem/2rem "Helvetica Neue LT Std";
+  font: normal 1.5rem/2rem "Helvetica Neue LT Std";
 }
 
 @media (min-width: 1024px) {
@@ -676,7 +675,7 @@ header .btn-container a {
 
 @media (min-width: 1024px) {
   .about-avilis-container .about-avilis-content p:nth-child(4) {
-    font: normal 1.6rem/2rem "Helvetica Neue Bd Std";
+    font: normal 1.5rem/2rem "Helvetica Neue Bd Std";
   }
 }
 
@@ -685,6 +684,8 @@ header .btn-container a {
 }
 
 .about-avilis-container .about-avilis-content .btn-container .btn-contact {
+  font: "Helvetica Neue LT Std";
+  letter-spacing: 1.5px;
   margin-top: 30px;
   background-color: #abb5a0;
   border: 0;
