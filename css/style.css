@@ -372,8 +372,8 @@ header .btn-container a {
 @media (min-width: 1024px) {
   .about-container .about-description {
     height: 455px;
-    width: 40%;
-    padding: 0 50px 0 20px;
+    width: 50%;
+    padding: 0 40px 0 20px;
   }
 }
 
@@ -385,6 +385,7 @@ header .btn-container a {
 @media (min-width: 1024px) {
   .about-container .about-description h3 {
     font: normal 2.4rem/2.8rem "Helvetica Neue Roman Std";
+    padding-right: 60px;
   }
 }
 
@@ -398,7 +399,7 @@ header .btn-container a {
 
 @media (min-width: 1024px) {
   .about-container .about-description p:nth-child(2), .about-container .about-description p:nth-child(3) {
-    font: normal 2.1rem/2.8rem "Helvetica Neue Bd Std";
+    font: normal 2.1rem/2.8rem "Helvetica Neue LT Std";
   }
 }
 
@@ -408,7 +409,7 @@ header .btn-container a {
 
 @media (min-width: 1024px) {
   .about-container .about-description p:nth-child(4) {
-    font: normal 2.1rem/2.8rem "Helvetica Neue Bd Std";
+    font: normal 2.1rem/2.8rem "Helvetica Neue Medium Std";
   }
 }
 
@@ -480,17 +481,6 @@ header .btn-container a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .benefit-container .benefit-content .description-ordered {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    padding-left: 65px;
-  }
-  .benefit-container .benefit-content .image-ordered {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
 }
 
 .benefit-container .benefit-content .benefit-description {
@@ -531,7 +521,7 @@ header .btn-container a {
 
 @media (min-width: 1024px) {
   .benefit-container .benefit-content .benefit-description p {
-    font: normal 2.1rem/2.8rem "Helvetica Neue Bd Std";
+    font: normal 2.1rem/2.8rem "Helvetica Neue LT Std";
   }
 }
 
@@ -539,11 +529,10 @@ header .btn-container a {
   width: 20px;
 }
 
-.benefit-container .benefit-content .benefit-description ul {
-  padding-left: 20px;
-  padding-bottom: 20px;
-  letter-spacing: 3px;
-  font: normal 1.6rem/3rem "Helvetica Neue LT Std";
+@media (min-width: 1024px) {
+  .benefit-container .benefit-content .benefit-description div img {
+    width: 30px;
+  }
 }
 
 .benefit-container .benefit-content .benefit-description div {
@@ -567,37 +556,108 @@ header .btn-container a {
   }
 }
 
-.benefit-container .variant {
-  padding-bottom: 30px;
-}
-
 /*slider*/
-.swiper {
-  width: 100%;
-  padding: 20px 0 0;
+.carousel-container {
+  padding-bottom: 40px;
+  background: #d9e0d4;
 }
 
-.swiper-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.carousel-container .carousel-content {
+  padding: 60px 40px;
+  background: #d9e0d4;
+  color: #384a51;
+  padding-bottom: 0;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-  bottom: 40px;
+@media (min-width: 1024px) {
+  .carousel-container .carousel-content {
+    /*padding: 60px 40px 0;*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets
+@media (min-width: 1024px) {
+  .carousel-container .carousel-content .carousel-description {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 50%;
+    padding-left: 70px;
+  }
+}
+
+.carousel-container .carousel-content .carousel-description h3 {
+  font: normal 1.9rem/2.2rem "Helvetica Neue Medium Std";
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1024px) {
+  .carousel-container .carousel-content .carousel-description h3 {
+    font: normal 2.4rem/2.8rem "Helvetica Neue Roman Std";
+  }
+}
+
+.carousel-container .carousel-content .carousel-description ul {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  letter-spacing: 3px;
+  font: normal 1.6rem/3rem "Helvetica Neue LT Std";
+}
+
+@media (min-width: 1024px) {
+  .carousel-container .carousel-content .carousel-description ul {
+    font: normal 1.4rem/2.7rem "Helvetica Neue LT Std";
+  }
+}
+
+@media (min-width: 1024px) {
+  .carousel-container .carousel-content .carousel-image {
+    width: 50%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .carousel-container .carousel-content .carousel-image .swiper {
+    width: 100%;
+    padding: 20px 0 0;
+  }
+  .carousel-container .carousel-content .carousel-image .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.carousel-container .carousel-content .carousel-image .swiper-horizontal > .swiper-pagination-bullets,
+.carousel-container .carousel-content .carousel-image .swiper-pagination-bullets.swiper-pagination-horizontal,
+.carousel-container .carousel-content .carousel-image .swiper-pagination-custom,
+.carousel-container .carousel-content .carousel-image .swiper-pagination-fraction {
+  bottom: 20px;
+}
+
+@media (min-width: 1024px) {
+  .carousel-container .carousel-content .carousel-image .swiper-horizontal > .swiper-pagination-bullets,
+  .carousel-container .carousel-content .carousel-image .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .carousel-container .carousel-content .carousel-image .swiper-pagination-custom,
+  .carousel-container .carousel-content .carousel-image .swiper-pagination-fraction {
+    bottom: 30px;
+  }
+}
+
+.carousel-container .carousel-content .carousel-image .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.carousel-container .carousel-content .carousel-image .swiper-pagination-horizontal.swiper-pagination-bullets
 .swiper-pagination-bullet {
   background-color: #384a51;
 }
@@ -637,15 +697,14 @@ header .btn-container a {
   }
 }
 
-.move-container .move-description p {
+.move-container .move-description h3 {
   margin-bottom: 60px;
   font: normal 1.9rem/2.2rem "Helvetica Neue Medium Std";
 }
 
 @media (min-width: 1024px) {
-  .move-container .move-description p {
-    font-size: 2.4rem;
-    line-height: 2.8rem;
+  .move-container .move-description h3 {
+    font: normal 2.4rem/2.8rem "Helvetica Neue Roman Std";
   }
 }
 
@@ -694,8 +753,8 @@ header .btn-container a {
 
 @media (min-width: 1024px) {
   .legend-container {
-    background-color: #d9e0d4;
-    width: 350px;
+    background-color: #abb5a0;
+    width: 412px;
     position: absolute;
     z-index: 7;
     bottom: 0;
@@ -708,16 +767,16 @@ header .btn-container a {
   padding: 20px;
 }
 
-@media (min-width: 1024px) {
-  .legend-container .legend-content {
-    padding: 35px;
-  }
-}
-
 .legend-container .legend-content h2 {
   color: #384a51;
   margin-bottom: 20px;
   font: normal 1.9rem/2.2rem "Helvetica Neue Medium Std";
+}
+
+@media (min-width: 1024px) {
+  .legend-container .legend-content h2 {
+    font: normal 2.4rem/2.8rem "Helvetica Neue Roman Std";
+  }
 }
 
 .legend-container .legend-content ul {
@@ -727,15 +786,26 @@ header .btn-container a {
   font: normal 1.6rem/2.7rem "Helvetica Neue LT Std";
 }
 
+@media (min-width: 1024px) {
+  .legend-container .legend-content ul {
+    font: normal 1.4rem/2.7rem "Helvetica Neue LT Std";
+  }
+}
+
 .about-avilis-container {
-  padding: 60px 40px;
-  padding-top: 20px;
+  padding: 40px 40px 60px;
   background-color: #384a51;
   color: #ffffff;
 }
 
+@media (min-width: 1024px) {
+  .about-avilis-container {
+    padding: 60px 40px;
+  }
+}
+
 .about-avilis-container .about-avilis-content {
-  max-width: 650px;
+  max-width: 640px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -754,7 +824,7 @@ header .btn-container a {
 
 @media (min-width: 1024px) {
   .about-avilis-container .about-avilis-content h3 {
-    font-size: 3rem;
+    font: normal 2.4rem/2.8rem "Helvetica Neue Roman Std";
   }
 }
 
@@ -765,13 +835,18 @@ header .btn-container a {
 
 @media (min-width: 1024px) {
   .about-avilis-container .about-avilis-content p {
-    font-size: 2.2rem;
-    line-height: 2.7rem;
+    font: normal 2.1rem/2.8rem "Helvetica Neue LT Std";
   }
 }
 
 .about-avilis-container .about-avilis-content p:nth-child(2), .about-avilis-container .about-avilis-content p:nth-child(3) {
-  font: normal 1.5rem/1.8rem "Helvetica Neue LT Std";
+  font: normal 1.6rem/1.8rem "Helvetica Neue LT Std";
+}
+
+@media (min-width: 1024px) {
+  .about-avilis-container .about-avilis-content p:nth-child(2), .about-avilis-container .about-avilis-content p:nth-child(3) {
+    font: normal 2.1rem/2.8rem "Helvetica Neue LT Std";
+  }
 }
 
 .about-avilis-container .about-avilis-content p:nth-child(4) {
@@ -781,7 +856,7 @@ header .btn-container a {
 
 @media (min-width: 1024px) {
   .about-avilis-container .about-avilis-content p:nth-child(4) {
-    font: normal 1.5rem/2rem "Helvetica Neue Bd Std";
+    font: normal 2.1rem/2.8rem "Helvetica Neue Medium Std";
   }
 }
 
@@ -790,7 +865,7 @@ header .btn-container a {
 }
 
 .about-avilis-container .about-avilis-content .btn-container .btn-contact {
-  font: "Helvetica Neue LT Std";
+  font: normal 1.4rem/1.9rem "Helvetica Neue LT Std";
   letter-spacing: 1.5px;
   margin-top: 30px;
   background-color: #abb5a0;
@@ -805,6 +880,7 @@ header .btn-container a {
 @media (min-width: 1024px) {
   .about-avilis-container .about-avilis-content .btn-container .btn-contact {
     margin-top: 50px;
+    font: normal 2rem/2.5rem "Helvetica Neue LT Std";
   }
 }
 
@@ -836,13 +912,19 @@ footer .footer-content .logo-container {
   margin-bottom: 10px;
 }
 
+@media (min-width: 1024px) {
+  footer .footer-content .logo-container {
+    margin-bottom: 0;
+  }
+}
+
 footer .footer-content .logo-container a img {
   width: 60px;
 }
 
 @media (min-width: 1024px) {
   footer .footer-content .logo-container a img {
-    width: 100px;
+    width: 45px;
   }
 }
 
@@ -867,6 +949,12 @@ footer .footer-content .social-container a {
           justify-content: center;
   color: #384a51;
   margin-bottom: 10px;
+}
+
+@media (min-width: 1024px) {
+  footer .footer-content .social-container a {
+    font: normal 2rem/22rem "Helvetica Neue LT Std";
+  }
 }
 
 footer .footer-content .social-container a img {

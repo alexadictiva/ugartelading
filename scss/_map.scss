@@ -14,8 +14,8 @@
   background-color: $color3;
   padding: 35px;
   @include desktop {
-    background-color: $color4;
-    width: 350px;
+    background-color: $color5;
+    width: 412px;
     position: absolute;
     z-index: 7;
     bottom: 0;
@@ -24,20 +24,23 @@
   .legend-content {
     background-color: $color5;
     padding: 20px;
-    @include desktop {
-      padding: 35px;
-    }
 
     h2 {
       color: $color3;
       margin-bottom: 20px;
       font: $font1;
+      @include desktop {
+        font: $font11;
+      }
     }
     ul {
       color: $color3;
       padding-left: 20px;
       letter-spacing: 5px;
       font: $font36;
+      @include desktop {
+        font: $font13;
+      }
     }
   }
 }

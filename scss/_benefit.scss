@@ -10,13 +10,6 @@
       display: flex;
       gap: 93px;
       align-items: center;
-      .description-ordered {
-        order: 2;
-        padding-left: 65px;
-      }
-      .image-ordered {
-        order: 1;
-      }
     }
     .benefit-description {
       max-width: 550px;
@@ -44,13 +37,10 @@
       div {
         img {
           width: 20px;
+          @include desktop {
+            width: 30px;
+          }
         }
-      }
-      ul {
-        padding-left: 20px;
-        padding-bottom: 20px;
-        letter-spacing: 3px;
-        font: $font35;
       }
       div {
         margin: 20px 0 40px;
@@ -70,31 +60,77 @@
       }
     }
   }
-  .variant {
-    padding-bottom: 30px;
-  }
 }
 
 /*slider*/
+.carousel-container {
+  padding-bottom: 40px;
+  background: $color4;
 
-.swiper {
-  width: 100%;
-  padding: 20px 0 0;
-}
+  .carousel-content {
+    @include padding;
+    background: $color4;
+    color: $color3;
+    padding-bottom: 0;
+    @include desktop {
+      /*padding: 60px 40px 0;*/
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    .carousel-description {
+      @include desktop {
+        order: 2;
+        width: 50%;
+        padding-left: 70px;
+      }
+      h3 {
+        font: $font1;
+        margin-bottom: 20px;
+        @include desktop {
+          font: $font11;
+        }
+      }
+      ul {
+        padding-left: 20px;
+        padding-bottom: 20px;
+        letter-spacing: 3px;
+        font: $font35;
+        @include desktop {
+          font: $font13;
+        }
+      }
+    }
+    .carousel-image {
+      @include desktop {
+        width: 50%;
+        order: 1;
 
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.swiper-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-  bottom: 40px;
-}
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets
-  .swiper-pagination-bullet {
-  background-color: $color3;
+        .swiper {
+          width: 100%;
+          padding: 20px 0 0;
+        }
+
+        .swiper-slide {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      .swiper-horizontal > .swiper-pagination-bullets,
+      .swiper-pagination-bullets.swiper-pagination-horizontal,
+      .swiper-pagination-custom,
+      .swiper-pagination-fraction {
+        bottom: 20px;
+        @include desktop {
+          bottom: 30px;
+        }
+      }
+      .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+      .swiper-pagination-horizontal.swiper-pagination-bullets
+        .swiper-pagination-bullet {
+        background-color: $color3;
+      }
+    }
+  }
 }

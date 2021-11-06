@@ -1,10 +1,13 @@
 .about-avilis-container {
-  @include padding;
-  padding-top: 20px;
+  padding: 40px 40px 60px;
+
   background-color: $color3;
   color: $white;
+  @include desktop {
+    @include padding;
+  }
   .about-avilis-content {
-    max-width: 650px;
+    max-width: 640px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -14,24 +17,26 @@
       font: $font1;
       color: $fontColor2;
       @include desktop {
-        font-size: 3rem;
+        font: $font11;
       }
     }
     p {
       color: $fontColor2;
       font: $font38;
       @include desktop {
-        font-size: 2.2rem;
-        line-height: 2.7rem;
+        font: $font12;
       }
       &:nth-child(2),
       &:nth-child(3) {
         font: $font39;
+        @include desktop {
+          font: $font12;
+        }
       }
       &:nth-child(4) {
         font-weight: bold;
         @include desktop {
-          font: $font34;
+          font: $font14;
         }
 
         max-width: 400px;
@@ -40,7 +45,7 @@
     .btn-container {
       text-align: center;
       .btn-contact {
-        font: $fontBase1;
+        font: normal 1.4rem/1.9rem $fontBase1;
         letter-spacing: 1.5px;
         margin-top: 30px;
         background-color: $color5;
@@ -53,6 +58,7 @@
 
         @include desktop {
           margin-top: 50px;
+          font: normal 2rem/2.5rem $fontBase1;
         }
       }
     }
