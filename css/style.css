@@ -274,7 +274,7 @@ header .btn-container a {
 
 @media (min-width: 1024px) {
   .form-container form textarea {
-    height: 160px;
+    height: 150px;
   }
 }
 
@@ -350,6 +350,7 @@ header .btn-container a {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
+    gap: 100px;
   }
 }
 
@@ -370,7 +371,8 @@ header .btn-container a {
 
 @media (min-width: 1024px) {
   .about-container .about-description {
-    width: 50%;
+    height: 455px;
+    width: 40%;
     padding: 0 50px 0 20px;
   }
 }
@@ -396,7 +398,7 @@ header .btn-container a {
 
 @media (min-width: 1024px) {
   .about-container .about-description p:nth-child(2), .about-container .about-description p:nth-child(3) {
-    font-size: 2.1rem;
+    font: normal 2.1rem/2.8rem "Helvetica Neue Bd Std";
   }
 }
 
@@ -406,8 +408,7 @@ header .btn-container a {
 
 @media (min-width: 1024px) {
   .about-container .about-description p:nth-child(4) {
-    font-size: 2.1rem;
-    line-height: 2.7rem;
+    font: normal 2.1rem/2.8rem "Helvetica Neue Bd Std";
   }
 }
 
@@ -420,6 +421,12 @@ header .btn-container a {
   width: 20px;
 }
 
+@media (min-width: 1024px) {
+  .about-container .about-description div img {
+    width: 30px;
+  }
+}
+
 .about-container .about-image {
   text-align: center;
   margin-top: 40px;
@@ -427,6 +434,7 @@ header .btn-container a {
 
 @media (min-width: 1024px) {
   .about-container .about-image {
+    height: 455px;
     width: 50%;
     margin-top: 0px;
   }
@@ -434,7 +442,7 @@ header .btn-container a {
 
 @media (min-width: 1024px) {
   .about-container .about-image img {
-    width: 85%;
+    height: 100%;
   }
 }
 
@@ -467,6 +475,7 @@ header .btn-container a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    gap: 93px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -512,16 +521,18 @@ header .btn-container a {
 
 @media (min-width: 1024px) {
   .benefit-container .benefit-content .benefit-description h3 {
-    font-size: 2rem;
-    line-height: 3rem;
+    font: normal 2.4rem/2.8rem "Helvetica Neue Roman Std";
   }
 }
 
 .benefit-container .benefit-content .benefit-description p {
   font: normal 1.6rem/1.9rem "Helvetica Neue LT Std";
-  /* &:nth-child(4) {
-          font: $fontBodyBold;
-        } */
+}
+
+@media (min-width: 1024px) {
+  .benefit-container .benefit-content .benefit-description p {
+    font: normal 2.1rem/2.8rem "Helvetica Neue Bd Std";
+  }
 }
 
 .benefit-container .benefit-content .benefit-description div img {
@@ -546,13 +557,13 @@ header .btn-container a {
 
 @media (min-width: 1024px) {
   .benefit-container .benefit-content .benefit-image {
-    width: 50%;
+    height: 519px;
   }
 }
 
 @media (min-width: 1024px) {
   .benefit-container .benefit-content .benefit-image img {
-    width: 85%;
+    height: 100%;
   }
 }
 

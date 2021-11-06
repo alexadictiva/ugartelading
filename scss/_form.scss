@@ -52,7 +52,7 @@
       padding: 12px 18px;
       resize: none;
       @include desktop {
-        height: 160px;
+        height: 150px;
       }
       &::placeholder {
         color: $fontColor1;

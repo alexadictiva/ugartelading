@@ -8,6 +8,7 @@
     @include desktop {
       padding: 60px 40px 0;
       display: flex;
+      gap: 93px;
       align-items: center;
       .description-ordered {
         order: 2;
@@ -30,16 +31,15 @@
       h3 {
         font: $font1;
         @include desktop {
-          font-size: 2rem;
-          line-height: 3rem;
+          font: $font11;
         }
       }
       p {
         font: $font33;
 
-        /* &:nth-child(4) {
-          font: $fontBodyBold;
-        } */
+        @include desktop {
+          font: $font12;
+        }
       }
       div {
         img {
@@ -61,11 +61,11 @@
     .benefit-image {
       text-align: center;
       @include desktop {
-        width: 50%;
+        height: 519px;
       }
       img {
         @include desktop {
-          width: 85%;
+          height: 100%;
         }
       }
     }

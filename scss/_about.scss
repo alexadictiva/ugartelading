@@ -7,6 +7,7 @@
     padding: 60px;
     display: flex;
     align-items: start;
+    gap: 100px;
   }
   .about-description {
     max-width: 550px;
@@ -15,7 +16,8 @@
     justify-content: space-between;
     gap: 15px;
     @include desktop {
-      width: 50%;
+      height: 455px;
+      width: 40%;
       padding: 0 50px 0 20px;
     }
     h3 {
@@ -31,14 +33,13 @@
       &:nth-child(3) {
         font: $font32;
         @include desktop {
-          font-size: 2.1rem;
+          font: $font12;
         }
       }
       &:nth-child(4) {
         font: $font34;
         @include desktop {
-          font-size: 2.1rem;
-          line-height: 2.7rem;
+          font: $font12;
         }
       }
     }
@@ -47,6 +48,9 @@
       margin: 25px 0 0;
       img {
         width: 20px;
+        @include desktop {
+          width: 30px;
+        }
       }
     }
   }
@@ -54,12 +58,13 @@
     text-align: center;
     margin-top: 40px;
     @include desktop {
+      height: 455px;
       width: 50%;
       margin-top: 0px;
     }
     img {
       @include desktop {
-        width: 85%;
+        height: 100%;
       }
     }
   }
