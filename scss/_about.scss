@@ -4,7 +4,7 @@
   background: $color3;
   color: $white;
   @include desktop {
-    padding: 60px 40px;
+    padding: 60px;
     display: flex;
     align-items: start;
   }
@@ -22,8 +22,7 @@
       color: $fontColor2;
       font: $font31;
       @include desktop {
-        font-size: 2.2rem;
-        line-height: 3rem;
+        font: $font11;
       }
     }
     p {
@@ -31,11 +30,14 @@
       &:nth-child(2),
       &:nth-child(3) {
         font: $font32;
+        @include desktop {
+          font-size: 2.1rem;
+        }
       }
       &:nth-child(4) {
         font: $font34;
         @include desktop {
-          font-size: 1.8rem;
+          font-size: 2.1rem;
           line-height: 2.7rem;
         }
       }
@@ -60,5 +62,16 @@
         width: 85%;
       }
     }
+  }
+}
+.brDesktop {
+  display: none;
+  @include desktop {
+    display: block;
+  }
+}
+.brMobile {
+  @include desktop {
+    display: none;
   }
 }

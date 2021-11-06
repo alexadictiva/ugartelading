@@ -169,14 +169,14 @@ header .btn-container a {
 
 @media (min-width: 1024px) {
   .intro-container .overlay h1 img {
-    width: 300px;
+    width: 360px;
   }
 }
 
 .form-container {
   background-color: #f4f6f2;
   padding: 60px 40px;
-  max-width: 768px;
+  max-width: 700px;
   margin: auto;
 }
 
@@ -190,7 +190,8 @@ header .btn-container a {
 @media (min-width: 1024px) {
   .form-container h3 {
     text-align: left;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
   }
 }
 
@@ -214,6 +215,12 @@ header .btn-container a {
   margin-bottom: 12px;
   width: 100%;
   padding: 12px 18px;
+}
+
+@media (min-width: 1024px) {
+  .form-container form input {
+    height: 50px;
+  }
 }
 
 .form-container form input::-webkit-input-placeholder {
@@ -240,6 +247,21 @@ header .btn-container a {
   letter-spacing: 0.05rem;
 }
 
+@media (min-width: 1024px) {
+  .form-container form input::-webkit-input-placeholder {
+    font-size: 1.4rem;
+  }
+  .form-container form input:-ms-input-placeholder {
+    font-size: 1.4rem;
+  }
+  .form-container form input::-ms-input-placeholder {
+    font-size: 1.4rem;
+  }
+  .form-container form input::placeholder {
+    font-size: 1.4rem;
+  }
+}
+
 .form-container form textarea {
   letter-spacing: 0.05rem;
   background: #d9e0d4;
@@ -248,6 +270,12 @@ header .btn-container a {
   width: 100%;
   padding: 12px 18px;
   resize: none;
+}
+
+@media (min-width: 1024px) {
+  .form-container form textarea {
+    height: 160px;
+  }
 }
 
 .form-container form textarea::-webkit-input-placeholder {
@@ -270,6 +298,21 @@ header .btn-container a {
   font: normal 1.5rem/2.2rem "Helvetica Neue LT Std";
 }
 
+@media (min-width: 1024px) {
+  .form-container form textarea::-webkit-input-placeholder {
+    font-size: 1.4rem;
+  }
+  .form-container form textarea:-ms-input-placeholder {
+    font-size: 1.4rem;
+  }
+  .form-container form textarea::-ms-input-placeholder {
+    font-size: 1.4rem;
+  }
+  .form-container form textarea::placeholder {
+    font-size: 1.4rem;
+  }
+}
+
 .form-container form button {
   font: normal 1.5rem/2.2rem "Helvetica Neue LT Std";
   letter-spacing: 1.5px;
@@ -285,7 +328,9 @@ header .btn-container a {
 
 @media (min-width: 1024px) {
   .form-container form button {
-    width: 15%;
+    width: 12%;
+    padding: 5px 0px;
+    font-size: 1.4rem;
   }
 }
 
@@ -298,7 +343,7 @@ header .btn-container a {
 
 @media (min-width: 1024px) {
   .about-container {
-    padding: 60px 40px;
+    padding: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -337,8 +382,7 @@ header .btn-container a {
 
 @media (min-width: 1024px) {
   .about-container .about-description h3 {
-    font-size: 2.2rem;
-    line-height: 3rem;
+    font: normal 2.4rem/2.8rem "Helvetica Neue Roman Std";
   }
 }
 
@@ -350,13 +394,19 @@ header .btn-container a {
   font: normal 1.6rem/2rem "Helvetica Neue LT Std";
 }
 
+@media (min-width: 1024px) {
+  .about-container .about-description p:nth-child(2), .about-container .about-description p:nth-child(3) {
+    font-size: 2.1rem;
+  }
+}
+
 .about-container .about-description p:nth-child(4) {
   font: normal 1.5rem/2rem "Helvetica Neue Bd Std";
 }
 
 @media (min-width: 1024px) {
   .about-container .about-description p:nth-child(4) {
-    font-size: 1.8rem;
+    font-size: 2.1rem;
     line-height: 2.7rem;
   }
 }
@@ -385,6 +435,22 @@ header .btn-container a {
 @media (min-width: 1024px) {
   .about-container .about-image img {
     width: 85%;
+  }
+}
+
+.brDesktop {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .brDesktop {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .brMobile {
+    display: none;
   }
 }
 
