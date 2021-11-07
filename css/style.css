@@ -72,7 +72,7 @@ header {
   width: 100vw;
   position: fixed;
   z-index: 10;
-  background-color: #cfd5ca;
+  background: transparent;
 }
 
 @media (min-width: 1024px) {
@@ -855,12 +855,18 @@ header .btn-container a {
 
 .about-avilis-container .about-avilis-content .btn-container {
   text-align: center;
+  margin-top: 30px;
+}
+
+@media (min-width: 1024px) {
+  .about-avilis-container .about-avilis-content .btn-container {
+    margin-top: 50px;
+  }
 }
 
 .about-avilis-container .about-avilis-content .btn-container .btn-contact {
   font: normal 1.4rem/1.9rem "Helvetica Neue LT Std";
   letter-spacing: 1.5px;
-  margin-top: 30px;
   background-color: #abb5a0;
   border: 0;
   outline: none;
@@ -872,7 +878,6 @@ header .btn-container a {
 
 @media (min-width: 1024px) {
   .about-avilis-container .about-avilis-content .btn-container .btn-contact {
-    margin-top: 50px;
     font: normal 2rem/2.5rem "Helvetica Neue LT Std";
   }
 }
