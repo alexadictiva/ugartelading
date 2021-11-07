@@ -13,7 +13,7 @@
     color: $fontColor2;
     max-width: 550px;
     @include desktop {
-      width: 50%;
+      width: 45%;
       padding: 0 50px 0 20px;
       order: 2;
     }
@@ -34,7 +34,7 @@
   .move-image {
     text-align: center;
     @include desktop {
-      width: 50%;
+      width: 55%;
       order: 1;
     }
     img {

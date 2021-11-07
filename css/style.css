@@ -77,6 +77,7 @@ header {
 
 @media (min-width: 1024px) {
   header {
+    padding: 0 60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -100,17 +101,8 @@ header nav {
   padding-left: 20px;
 }
 
-@media (min-width: 1024px) {
-  header nav {
-    padding-left: 40px;
-  }
-}
-
 header nav img {
-  height: 25px;
-  /* @include desktop {
-        height: 70%;
-      } */
+  height: 30px;
 }
 
 header .btn-container {
@@ -120,7 +112,6 @@ header .btn-container {
 @media (min-width: 1024px) {
   header .btn-container {
     display: block;
-    padding-right: 40px;
   }
 }
 
@@ -131,7 +122,7 @@ header .btn-container a {
   border: 0;
   outline: none;
   cursor: pointer;
-  color: #ffffff;
+  color: #f4f6f2;
   padding: 10px 15px;
   border-radius: 9px;
 }
@@ -145,7 +136,7 @@ header .btn-container a {
 }
 
 .intro-container .overlay {
-  background: #d4daceb9;
+  background: #d4dace75;
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -373,7 +364,7 @@ header .btn-container a {
   .about-container .about-description {
     height: 455px;
     width: 50%;
-    padding: 0 40px 0 20px;
+    padding: 0 60px 0 0px;
   }
 }
 
@@ -399,7 +390,7 @@ header .btn-container a {
 
 @media (min-width: 1024px) {
   .about-container .about-description p:nth-child(2), .about-container .about-description p:nth-child(3) {
-    font: normal 2.1rem/2.8rem "Helvetica Neue LT Std";
+    font: normal 2.1rem/2.7rem "Helvetica Neue LT Std";
   }
 }
 
@@ -472,11 +463,11 @@ header .btn-container a {
 
 @media (min-width: 1024px) {
   .benefit-container .benefit-content {
-    padding: 60px 40px 0;
+    padding: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 93px;
+    gap: 35px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -501,7 +492,7 @@ header .btn-container a {
 @media (min-width: 1024px) {
   .benefit-container .benefit-content .benefit-description {
     width: 50%;
-    padding: 0 0 0 20px;
+    padding: 0;
   }
 }
 
@@ -521,7 +512,7 @@ header .btn-container a {
 
 @media (min-width: 1024px) {
   .benefit-container .benefit-content .benefit-description p {
-    font: normal 2.1rem/2.8rem "Helvetica Neue LT Std";
+    font: normal 2.1rem/2.7rem "Helvetica Neue LT Std";
   }
 }
 
@@ -546,6 +537,8 @@ header .btn-container a {
 
 @media (min-width: 1024px) {
   .benefit-container .benefit-content .benefit-image {
+    padding-left: 35px;
+    width: 50%;
     height: 519px;
   }
 }
@@ -571,7 +564,7 @@ header .btn-container a {
 
 @media (min-width: 1024px) {
   .carousel-container .carousel-content {
-    /*padding: 60px 40px 0;*/
+    padding: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -689,7 +682,7 @@ header .btn-container a {
 
 @media (min-width: 1024px) {
   .move-container .move-description {
-    width: 50%;
+    width: 45%;
     padding: 0 50px 0 20px;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -719,7 +712,7 @@ header .btn-container a {
 
 @media (min-width: 1024px) {
   .move-container .move-image {
-    width: 50%;
+    width: 55%;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -835,7 +828,7 @@ header .btn-container a {
 
 @media (min-width: 1024px) {
   .about-avilis-container .about-avilis-content p {
-    font: normal 2.1rem/2.8rem "Helvetica Neue LT Std";
+    font: normal 2.1rem/2.7rem "Helvetica Neue LT Std";
   }
 }
 
@@ -845,7 +838,7 @@ header .btn-container a {
 
 @media (min-width: 1024px) {
   .about-avilis-container .about-avilis-content p:nth-child(2), .about-avilis-container .about-avilis-content p:nth-child(3) {
-    font: normal 2.1rem/2.8rem "Helvetica Neue LT Std";
+    font: normal 2.1rem/2.7rem "Helvetica Neue LT Std";
   }
 }
 
@@ -924,7 +917,7 @@ footer .footer-content .logo-container a img {
 
 @media (min-width: 1024px) {
   footer .footer-content .logo-container a img {
-    width: 45px;
+    width: 55px;
   }
 }
 

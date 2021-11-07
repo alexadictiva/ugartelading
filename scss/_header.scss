@@ -5,6 +5,7 @@ header {
   z-index: 10;
   background-color: $color2;
   @include desktop {
+    padding: 0 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,21 +15,15 @@ header {
     display: flex;
     align-items: center;
     padding-left: 20px;
-    @include desktop {
-      padding-left: 40px;
-    }
+
     img {
-      height: 25px;
-      /* @include desktop {
-        height: 70%;
-      } */
+      height: 30px;
     }
   }
   .btn-container {
     display: none;
     @include desktop {
       display: block;
-      padding-right: 40px;
     }
     a {
       letter-spacing: 1.5px;
@@ -37,7 +32,7 @@ header {
       border: 0;
       outline: none;
       cursor: pointer;
-      color: $white;
+      color: $color6;
       padding: 10px 15px;
       border-radius: 9px;
     }

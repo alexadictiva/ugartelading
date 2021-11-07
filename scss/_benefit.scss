@@ -6,9 +6,9 @@
     color: $color3;
     padding-bottom: 0;
     @include desktop {
-      padding: 60px 40px 0;
+      padding: 60px;
       display: flex;
-      gap: 93px;
+      gap: 35px;
       align-items: center;
     }
     .benefit-description {
@@ -19,7 +19,7 @@
       gap: 20px;
       @include desktop {
         width: 50%;
-        padding: 0 0 0 20px;
+        padding: 0;
       }
       h3 {
         font: $font1;
@@ -51,85 +51,14 @@
     .benefit-image {
       text-align: center;
       @include desktop {
+        padding-left: 35px;
+        width: 50%;
         height: 519px;
       }
       img {
         @include desktop {
           height: 100%;
         }
-      }
-    }
-  }
-}
-
-/*slider*/
-.carousel-container {
-  padding-bottom: 40px;
-  background: $color4;
-
-  .carousel-content {
-    @include padding;
-    background: $color4;
-    color: $color3;
-    padding-bottom: 0;
-    @include desktop {
-      /*padding: 60px 40px 0;*/
-      display: flex;
-      gap: 20px;
-      align-items: center;
-    }
-    .carousel-description {
-      @include desktop {
-        order: 2;
-        width: 50%;
-        padding-left: 70px;
-      }
-      h3 {
-        font: $font1;
-        margin-bottom: 20px;
-        @include desktop {
-          font: $font11;
-        }
-      }
-      ul {
-        padding-left: 20px;
-        padding-bottom: 20px;
-        letter-spacing: 3px;
-        font: $font35;
-        @include desktop {
-          font: $font13;
-        }
-      }
-    }
-    .carousel-image {
-      @include desktop {
-        width: 50%;
-        order: 1;
-
-        .swiper {
-          width: 100%;
-          padding: 20px 0 0;
-        }
-
-        .swiper-slide {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-      }
-      .swiper-horizontal > .swiper-pagination-bullets,
-      .swiper-pagination-bullets.swiper-pagination-horizontal,
-      .swiper-pagination-custom,
-      .swiper-pagination-fraction {
-        bottom: 20px;
-        @include desktop {
-          bottom: 30px;
-        }
-      }
-      .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-      .swiper-pagination-horizontal.swiper-pagination-bullets
-        .swiper-pagination-bullet {
-        background-color: $color3;
       }
     }
   }
