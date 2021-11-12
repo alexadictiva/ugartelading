@@ -19,9 +19,6 @@ footer {
       a {
         img {
           width: 60px;
-          @include desktop {
-            width: 55px;
-          }
         }
       }
     }
@@ -42,7 +39,7 @@ footer {
           font: $font15;
         }
         img {
-          width: 15px;
+          width: 25px;
         }
         @include desktop {
           width: 50%;
@@ -57,10 +54,10 @@ footer {
       bottom: 50px;
       right: 20px;
       @include desktop {
-        bottom: 45px;
+        bottom: 35px;
       }
       img {
-        width: 5px;
+        width: 8px;
       }
     }
   }

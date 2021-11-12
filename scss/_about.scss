@@ -39,6 +39,7 @@
       }
       &:nth-child(4) {
         font: $font34;
+        color: $white;
         @include desktop {
           font: $font14;
         }
