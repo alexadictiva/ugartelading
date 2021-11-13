@@ -3,7 +3,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 60vh;
+  @include desktop {
+    height: 100vh;
+  }
   .overlay {
     background: $overlay;
     height: 100%;

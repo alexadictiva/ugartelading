@@ -163,7 +163,13 @@ header .btn-container a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 60vh;
+}
+
+@media (min-width: 1024px) {
+  .intro-container {
+    height: 100vh;
+  }
 }
 
 .intro-container .overlay {
@@ -343,7 +349,7 @@ header .btn-container a {
   outline: none;
   cursor: pointer;
   color: #ffffff;
-  padding: 10px 0px;
+  padding: 8.5px 0px 10px;
   width: 25%;
   border-radius: 9px;
 }
@@ -984,6 +990,9 @@ footer .footer-content .social-container a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
