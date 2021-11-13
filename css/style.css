@@ -154,7 +154,7 @@ header .btn-container a {
   outline: none;
   cursor: pointer;
   color: #f4f6f2;
-  padding: 8.5px 15px 10px;
+  padding: 10px 15px 8px;
   border-radius: 9px;
 }
 
@@ -349,7 +349,7 @@ header .btn-container a {
   outline: none;
   cursor: pointer;
   color: #ffffff;
-  padding: 8.5px 0px 10px;
+  padding: 10px 0px 8px;
   width: 25%;
   border-radius: 9px;
 }
@@ -928,7 +928,7 @@ header .btn-container a {
   cursor: pointer;
   color: #ffffff;
   border-radius: 7px;
-  padding: 8.5px 15px 10px;
+  padding: 10px 15px 8px;
 }
 
 @media (min-width: 1024px) {
