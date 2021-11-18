@@ -1,72 +1,78 @@
 .about-container {
-  @include padding;
-  padding-bottom: 30px;
   background: $color3;
-  color: $white;
-  @include desktop {
-    padding: 60px;
-    display: flex;
-    align-items: start;
-    gap: 100px;
-  }
-  .about-description {
-    max-width: 550px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 15px;
+  .about-content {
+    @include padding;
+    max-width: calc(94%);
+    margin: auto;
+    padding-bottom: 30px;
+    color: $white;
     @include desktop {
-      height: 455px;
-      width: 50%;
-      padding: 0 60px 0 0px;
+      padding: 60px;
+      display: flex;
+      justify-content: center;
+      gap: 100px;
+      align-items: center;
     }
-    h3 {
-      color: $fontColor2;
-      font: $font31;
+    .about-description {
+      max-width: 550px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
       @include desktop {
-        font: $font11;
-        padding-right: 60px;
+        /*  height: 455px; */
+        width: 50%;
+        /* padding: 0 60px 0 0px; */
+        padding: 0;
       }
-    }
-    p {
-      color: $fontColor2;
-      &:nth-child(2),
-      &:nth-child(3) {
-        font: $font32;
+      h3 {
+        color: $fontColor2;
+        font: $font31;
         @include desktop {
-          font: $font12;
+          font: $font11;
+          padding-right: 60px;
         }
       }
-      &:nth-child(4) {
-        font: $font34;
-        color: $white;
-        @include desktop {
-          font: $font14;
+      p {
+        color: $fontColor2;
+        &:nth-child(2),
+        &:nth-child(3) {
+          font: $font32;
+          @include desktop {
+            font: $font12;
+          }
+        }
+        &:nth-child(4) {
+          font: $font34;
+          color: $white;
+          @include desktop {
+            font: $font14;
+          }
+        }
+      }
+      div {
+        text-align: center;
+        margin: 25px 0 0;
+        img {
+          width: 20px;
+          @include desktop {
+            width: 30px;
+          }
         }
       }
     }
-    div {
+    .about-image {
       text-align: center;
-      margin: 25px 0 0;
-      img {
-        width: 20px;
-        @include desktop {
-          width: 30px;
-        }
-      }
-    }
-  }
-  .about-image {
-    text-align: center;
-    margin-top: 40px;
-    @include desktop {
-      height: 455px;
-      width: 50%;
-      margin-top: 0px;
-    }
-    img {
+      margin-top: 40px;
       @include desktop {
-        height: 100%;
+        height: 455px;
+        width: 50%;
+        margin-top: 0px;
+      }
+      img {
+        @include desktop {
+          height: 100%;
+        }
       }
     }
   }

@@ -5,12 +5,16 @@
 
   .carousel-content {
     @include padding;
+    max-width: calc(94%);
+    margin: auto;
     background: $color4;
     color: $color3;
     padding-bottom: 0;
+
     @include desktop {
       padding: 60px;
       display: flex;
+      justify-content: center;
       gap: 20px;
       align-items: center;
     }
@@ -19,6 +23,9 @@
         order: 2;
         width: 50%;
         padding-left: 70px;
+      }
+      @include biggest-desktop {
+        padding-left: 100px;
       }
       h3 {
         font: $font1;
@@ -33,10 +40,10 @@
         letter-spacing: 3px;
         font: $font35;
         li {
-        &::marker {
-          font-size: 20px;
+          &::marker {
+            font-size: 20px;
+          }
         }
-      }
         @include desktop {
           font: $font13;
         }
@@ -57,6 +64,9 @@
           justify-content: center;
           align-items: center;
         }
+      }
+      @include biggest-desktop {
+        padding: 0 60px 0 120px;
       }
       .swiper-horizontal > .swiper-pagination-bullets,
       .swiper-pagination-bullets.swiper-pagination-horizontal,

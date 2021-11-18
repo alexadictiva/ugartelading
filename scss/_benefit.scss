@@ -1,15 +1,20 @@
 .benefit-container {
+  background: $color4;
   .benefit-content {
     @include padding;
-
-    background: $color4;
+    max-width: calc(94%);
+    margin: auto;
     color: $color3;
     padding-bottom: 0;
     @include desktop {
       padding: 60px;
       display: flex;
+      justify-content: center;
       gap: 35px;
       align-items: center;
+    }
+    @include biggest-desktop {
+      gap: 65px;
     }
     .benefit-description {
       max-width: 550px;
@@ -21,6 +26,7 @@
         width: 50%;
         padding: 0;
       }
+
       h3 {
         font: $font1;
         @include desktop {

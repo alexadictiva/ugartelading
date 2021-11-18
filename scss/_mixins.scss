@@ -9,6 +9,11 @@
     @content;
   }
 }
+@mixin biggest-desktop {
+  @media (min-width: 1600px) {
+    @content;
+  }
+}
 @mixin padding {
   padding: 60px 40px;
 }

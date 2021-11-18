@@ -363,26 +363,34 @@ header .btn-container a {
 }
 
 .about-container {
-  padding: 60px 40px;
-  padding-bottom: 30px;
   background: #384a51;
+}
+
+.about-container .about-content {
+  padding: 60px 40px;
+  max-width: calc(94%);
+  margin: auto;
+  padding-bottom: 30px;
   color: #ffffff;
 }
 
 @media (min-width: 1024px) {
-  .about-container {
+  .about-container .about-content {
     padding: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 100px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
-.about-container .about-description {
+.about-container .about-content .about-description {
   max-width: 550px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -394,76 +402,77 @@ header .btn-container a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 15px;
+  gap: 20px;
 }
 
 @media (min-width: 1024px) {
-  .about-container .about-description {
-    height: 455px;
+  .about-container .about-content .about-description {
+    /*  height: 455px; */
     width: 50%;
-    padding: 0 60px 0 0px;
+    /* padding: 0 60px 0 0px; */
+    padding: 0;
   }
 }
 
-.about-container .about-description h3 {
+.about-container .about-content .about-description h3 {
   color: #d9e0d4;
   font: normal 1.9rem/2.2rem "Helvetica Neue Medium Std";
 }
 
 @media (min-width: 1024px) {
-  .about-container .about-description h3 {
+  .about-container .about-content .about-description h3 {
     font: normal 2.4rem/2.8rem "Helvetica Neue Roman Std";
     padding-right: 60px;
   }
 }
 
-.about-container .about-description p {
+.about-container .about-content .about-description p {
   color: #d9e0d4;
 }
 
-.about-container .about-description p:nth-child(2), .about-container .about-description p:nth-child(3) {
+.about-container .about-content .about-description p:nth-child(2), .about-container .about-content .about-description p:nth-child(3) {
   font: normal 1.6rem/2rem "Helvetica Neue LT Std";
 }
 
 @media (min-width: 1024px) {
-  .about-container .about-description p:nth-child(2), .about-container .about-description p:nth-child(3) {
+  .about-container .about-content .about-description p:nth-child(2), .about-container .about-content .about-description p:nth-child(3) {
     font: normal 2.1rem/2.7rem "Helvetica Neue LT Std";
   }
 }
 
-.about-container .about-description p:nth-child(4) {
+.about-container .about-content .about-description p:nth-child(4) {
   font: normal 1.5rem/2rem "Helvetica Neue Bd Std";
   color: #ffffff;
 }
 
 @media (min-width: 1024px) {
-  .about-container .about-description p:nth-child(4) {
+  .about-container .about-content .about-description p:nth-child(4) {
     font: normal 2.1rem/2.8rem "Helvetica Neue Medium Std";
   }
 }
 
-.about-container .about-description div {
+.about-container .about-content .about-description div {
   text-align: center;
   margin: 25px 0 0;
 }
 
-.about-container .about-description div img {
+.about-container .about-content .about-description div img {
   width: 20px;
 }
 
 @media (min-width: 1024px) {
-  .about-container .about-description div img {
+  .about-container .about-content .about-description div img {
     width: 30px;
   }
 }
 
-.about-container .about-image {
+.about-container .about-content .about-image {
   text-align: center;
   margin-top: 40px;
 }
 
 @media (min-width: 1024px) {
-  .about-container .about-image {
+  .about-container .about-content .about-image {
     height: 455px;
     width: 50%;
     margin-top: 0px;
@@ -471,7 +480,7 @@ header .btn-container a {
 }
 
 @media (min-width: 1024px) {
-  .about-container .about-image img {
+  .about-container .about-content .about-image img {
     height: 100%;
   }
 }
@@ -492,9 +501,14 @@ header .btn-container a {
   }
 }
 
+.benefit-container {
+  background: #d9e0d4;
+}
+
 .benefit-container .benefit-content {
   padding: 60px 40px;
-  background: #d9e0d4;
+  max-width: calc(94%);
+  margin: auto;
   color: #384a51;
   padding-bottom: 0;
 }
@@ -505,10 +519,19 @@ header .btn-container a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 35px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media (min-width: 1600px) {
+  .benefit-container .benefit-content {
+    gap: 65px;
   }
 }
 
@@ -595,6 +618,8 @@ header .btn-container a {
 
 .carousel-container .carousel-content {
   padding: 60px 40px;
+  max-width: calc(94%);
+  margin: auto;
   background: #d9e0d4;
   color: #384a51;
   padding-bottom: 0;
@@ -606,6 +631,9 @@ header .btn-container a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 20px;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -620,6 +648,12 @@ header .btn-container a {
             order: 2;
     width: 50%;
     padding-left: 70px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .carousel-container .carousel-content .carousel-description {
+    padding-left: 100px;
   }
 }
 
@@ -675,6 +709,12 @@ header .btn-container a {
   }
 }
 
+@media (min-width: 1600px) {
+  .carousel-container .carousel-content .carousel-image {
+    padding: 0 60px 0 120px;
+  }
+}
+
 .carousel-container .carousel-content .carousel-image .swiper-horizontal > .swiper-pagination-bullets,
 .carousel-container .carousel-content .carousel-image .swiper-pagination-bullets.swiper-pagination-horizontal,
 .carousel-container .carousel-content .carousel-image .swiper-pagination-custom,
@@ -707,32 +747,40 @@ header .btn-container a {
 }
 
 .move-container {
+  background: #384a51;
+}
+
+.move-container .move-content {
   padding: 60px 40px;
+  max-width: calc(94%);
+  margin: auto;
   padding-top: 45px;
   padding-bottom: 30px;
-  background: #384a51;
+  padding-left: 15px;
   color: #ffffff;
 }
 
 @media (min-width: 1024px) {
-  .move-container {
+  .move-container .move-content {
     padding: 60px 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
 }
 
-.move-container .move-description {
+.move-container .move-content .move-description {
   color: #d9e0d4;
   max-width: 550px;
 }
 
 @media (min-width: 1024px) {
-  .move-container .move-description {
+  .move-container .move-content .move-description {
     width: 45%;
     padding: 0 50px 0 20px;
     -webkit-box-ordinal-group: 3;
@@ -741,28 +789,28 @@ header .btn-container a {
   }
 }
 
-.move-container .move-description h3 {
+.move-container .move-content .move-description h3 {
   margin-bottom: 60px;
   font: normal 1.9rem/2.2rem "Helvetica Neue Medium Std";
 }
 
 @media (min-width: 1024px) {
-  .move-container .move-description h3 {
+  .move-container .move-content .move-description h3 {
     font: normal 2.4rem/2.8rem "Helvetica Neue Roman Std";
   }
 }
 
-.move-container .move-description div {
+.move-container .move-content .move-description div {
   margin: 40px 0;
   text-align: center;
 }
 
-.move-container .move-image {
+.move-container .move-content .move-image {
   text-align: center;
 }
 
 @media (min-width: 1024px) {
-  .move-container .move-image {
+  .move-container .move-content .move-image {
     width: 55%;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -770,9 +818,22 @@ header .btn-container a {
   }
 }
 
+@media (min-width: 1600px) {
+  .move-container .move-content .move-image {
+    width: 43%;
+  }
+}
+
 @media (min-width: 1024px) {
-  .move-container .move-image img {
-    width: 85%;
+  .move-container .move-content .move-image img {
+    width: 82%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .move-container .move-content .move-image img {
+    width: auto;
+    height: 515px;
   }
 }
 
