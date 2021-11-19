@@ -4,37 +4,34 @@
     @include padding;
     max-width: calc(94%);
     margin: auto;
-
+    padding-top: 45px;
     padding-bottom: 30px;
-
+    padding-left: 15px;
+    color: $white;
     @include desktop {
-      padding: 60px;
+      padding: 60px 40px;
       display: flex;
-
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
-    }
-    @include biggest-desktop {
-      justify-content: space-between;
-      padding: 60px 180px;
     }
     .move-description {
       color: $fontColor2;
       max-width: 550px;
       @include desktop {
-        width: 50%;
+        width: 45%;
+        padding: 0 50px 0 20px;
         order: 2;
       }
 
       h3 {
         margin-bottom: 60px;
+
         font: $font1;
         @include desktop {
           font: $font11;
-          margin-left: 90px;
         }
         @include biggest-desktop {
-          margin-left: -55px;
+          margin-left: -100px;
         }
       }
       div {
@@ -45,17 +42,19 @@
     .move-image {
       text-align: center;
       @include desktop {
-        text-align: start;
-        width: 50%;
+        width: 55%;
         order: 1;
       }
       @include biggest-desktop {
-        width: 46%;
+        width: 43%;
       }
-
       img {
         @include desktop {
-          width: 100%;
+          width: 82%;
+        }
+        @include biggest-desktop {
+          width: auto;
+          height: 515px;
         }
       }
     }

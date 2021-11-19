@@ -754,30 +754,23 @@ header .btn-container a {
   padding: 60px 40px;
   max-width: calc(94%);
   margin: auto;
+  padding-top: 45px;
   padding-bottom: 30px;
+  padding-left: 15px;
+  color: #ffffff;
 }
 
 @media (min-width: 1024px) {
   .move-container .move-content {
-    padding: 60px;
+    padding: 60px 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-}
-
-@media (min-width: 1600px) {
-  .move-container .move-content {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 60px 180px;
   }
 }
 
@@ -788,7 +781,8 @@ header .btn-container a {
 
 @media (min-width: 1024px) {
   .move-container .move-content .move-description {
-    width: 50%;
+    width: 45%;
+    padding: 0 50px 0 20px;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -803,13 +797,12 @@ header .btn-container a {
 @media (min-width: 1024px) {
   .move-container .move-content .move-description h3 {
     font: normal 2.4rem/2.8rem "Helvetica Neue Roman Std";
-    margin-left: 90px;
   }
 }
 
 @media (min-width: 1600px) {
   .move-container .move-content .move-description h3 {
-    margin-left: -55px;
+    margin-left: -100px;
   }
 }
 
@@ -824,8 +817,7 @@ header .btn-container a {
 
 @media (min-width: 1024px) {
   .move-container .move-content .move-image {
-    text-align: start;
-    width: 50%;
+    width: 55%;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -834,13 +826,20 @@ header .btn-container a {
 
 @media (min-width: 1600px) {
   .move-container .move-content .move-image {
-    width: 46%;
+    width: 43%;
   }
 }
 
 @media (min-width: 1024px) {
   .move-container .move-content .move-image img {
-    width: 100%;
+    width: 82%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .move-container .move-content .move-image img {
+    width: auto;
+    height: 515px;
   }
 }
 
